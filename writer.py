@@ -8,7 +8,10 @@ import requests
 
 import config
 
-ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+BASE = "https://generativelanguage.googleapis.com/v1beta"
+ENDPOINT = BASE + "/models/{model}:generateContent"
+_SKIP_WORDS = ("image", "tts", "audio", "live", "embedding", "native", "computer", "robotics", "vision", "exp")
+_MODELS_CACHE = None
 
 
 class WriterError(Exception):
@@ -16,6 +19,43 @@ class WriterError(Exception):
 
 
 _UNREACHABLE = False  # если Gemini не ответил ни одной моделью — в этом запуске больше не ждём
+
+
+def _available_models(key):
+    """Спрашивает у Google, какие модели доступны этому ключу, и выбирает текстовые Flash-модели.
+    Так бот не ломается, когда Google переименовывает или отключает модели."""
+    global _MODELS_CACHE
+    if _MODELS_CACHE is not None:
+        return _MODELS_CACHE
+    found = []
+    try:
+        r = requests.get(f"{BASE}/models", headers={"x-goog-api-key": key},
+                         params={"pageSize": 1000}, timeout=30)
+        if r.status_code == 200:
+            for m in r.json().get("models", []):
+                name = m.get("name", "").removeprefix("models/")
+                methods = m.get("supportedGenerationMethods") or []
+                if (name.startswith("gemini") and "flash" in name and "generateContent" in methods
+                        and not any(w in name for w in _SKIP_WORDS)):
+                    found.append(name)
+        else:
+            print(f"[gemini] список моделей: {r.status_code} {r.text[:200]}")
+    except requests.RequestException as e:
+        print(f"[gemini] список моделей: {type(e).__name__}")
+
+    def rank(name):
+        ver = re.search(r"gemini-(\d+(?:\.\d+)?)", name)
+        return ("preview" in name, "lite" in name, "latest" not in name and "-0" in name,
+                -float(ver.group(1)) if ver else 0)
+
+    found.sort(key=rank)
+    ordered = []
+    for name in config.GEMINI_MODELS[:1] + found + config.GEMINI_MODELS[1:]:
+        if name and name not in ordered:
+            ordered.append(name)
+    print(f"[gemini] модели по порядку: {', '.join(ordered[:8])}")
+    _MODELS_CACHE = ordered
+    return ordered
 
 
 def _ask(prompt, temperature=0.7):
@@ -30,7 +70,7 @@ def _ask(prompt, temperature=0.7):
         "generationConfig": {"temperature": temperature, "responseMimeType": "application/json"},
     }
     last = None
-    for model in config.GEMINI_MODELS:
+    for model in _available_models(key)[:6]:
         for attempt in range(3):
             try:
                 r = requests.post(ENDPOINT.format(model=model), headers={"x-goog-api-key": key},
@@ -41,11 +81,20 @@ def _ask(prompt, temperature=0.7):
                 time.sleep(5)
                 break  # таймаут или обрыв — сразу пробуем другую модель
             if r.status_code == 429:
+                if "limit: 0" in r.text or "free_tier" in r.text.lower() and attempt >= 1:
+                    last = f"{model}: нет бесплатной квоты"
+                    print(f"[gemini] {last}")
+                    break  # у этой модели нет бесплатного лимита — следующая
                 time.sleep(30 * (attempt + 1))
                 continue
-            if r.status_code in (404, 400) and "model" in r.text.lower():
+            if r.status_code == 404 or (r.status_code == 400 and "model" in r.text.lower()):
                 last = f"{model}: {r.status_code}"
+                print(f"[gemini] {last}")
                 break  # модель недоступна — пробуем следующую
+            if r.status_code in (401, 403):
+                last = f"{model}: {r.status_code} ключ не принят: {r.text[:150]}"
+                print(f"[gemini] {last}")
+                break
             if r.status_code != 200:
                 last = f"{model}: {r.status_code} {r.text[:200]}"
                 time.sleep(5)

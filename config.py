@@ -51,7 +51,7 @@ SUSPICIOUS_LINK_HOSTS = [
 # --- Gemini -------------------------------------------------------------------
 GEMINI_MODELS = [
     m for m in [os.getenv("GEMINI_MODEL", "").strip()] if m
-] + ["gemini-flash-latest", "gemini-flash-lite-latest", "gemini-2.5-flash"]
+] + ["gemini-flash-latest", "gemini-flash-lite-latest"]  # остальные бот узнаёт у Google сам
 GEMINI_PAUSE_SEC = 13         # пауза между запросами (бесплатный лимит)
 
 # --- Внешний вид креатива -----------------------------------------------------

@@ -250,12 +250,14 @@ def prepare(state, queue, posted):
 
     tmp = pathlib.Path(tempfile.mkdtemp())
     sent = 0
+    problems = []
     for n, item in enumerate(picks, 1):
         extra = item["_extra"]
         try:
             post = writer.write_post(item, extra["readme"])
         except writer.WriterError as e:
             print(f"[prepare] текст для {item['full_name']} не получился: {e}")
+            problems.append(f"текст {item['full_name']}: {e}")
             continue
         draft_id = secrets.token_hex(4)
         d = {
@@ -273,6 +275,7 @@ def prepare(state, queue, posted):
             render.render(item, post, png, palette=render.PALETTES[(len(posted) + n) % len(render.PALETTES)])
         except Exception as e:  # noqa: BLE001
             print(f"[prepare] рендер {item['full_name']} упал: {e}")
+            problems.append(f"картинка {item['full_name']}: {str(e)[:200]}")
             continue
 
         checks = (f"🛡 Проверка: автор на GitHub с {extra.get('owner_since') or '?'}, "
@@ -289,7 +292,10 @@ def prepare(state, queue, posted):
         sent += 1
 
     state["last_prepare_date"] = now_local().date().isoformat()
-    tg.send_message(admin, f"Готово: {sent} черновиков. Одобренные выйдут в {', '.join(config.PUBLISH_TIMES)}.")
+    report = f"Готово: {sent} черновиков. Одобренные выйдут в {', '.join(config.PUBLISH_TIMES)}."
+    if problems:
+        report += "\n\n⚠️ Проблемы:\n" + "\n".join(f"• {esc(p)}" for p in problems[:6])
+    tg.send_message(admin, report[:4000])
 
 
 # ---------- точка входа -----------------------------------------------------------
