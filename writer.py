@@ -10,7 +10,7 @@ import config
 
 BASE = "https://generativelanguage.googleapis.com/v1beta"
 ENDPOINT = BASE + "/models/{model}:generateContent"
-_SKIP_WORDS = ("image", "tts", "audio", "live", "embedding", "native", "computer", "robotics", "vision", "exp")
+_SKIP_WORDS = ("image", "tts", "audio", "live", "embedding", "native", "computer", "robotics", "vision", "exp", "omni")
 _MODELS_CACHE = None
 
 
@@ -45,7 +45,8 @@ def _available_models(key):
 
     def rank(name):
         ver = re.search(r"gemini-(\d+(?:\.\d+)?)", name)
-        return ("preview" in name, "lite" in name, "latest" not in name and "-0" in name,
+        # сначала быстрые Lite-модели: у них щедрее бесплатный лимит, и для коротких постов их хватает
+        return ("preview" in name, "lite" not in name, "latest" not in name and "-0" in name,
                 -float(ver.group(1)) if ver else 0)
 
     found.sort(key=rank)
@@ -74,18 +75,18 @@ def _ask(prompt, temperature=0.7):
         for attempt in range(3):
             try:
                 r = requests.post(ENDPOINT.format(model=model), headers={"x-goog-api-key": key},
-                                  json=body, timeout=120)
+                                  json=body, timeout=60)
             except requests.RequestException as e:
                 last = f"{model}: {type(e).__name__}"
                 print(f"[gemini] {last}")
                 time.sleep(5)
                 break  # таймаут или обрыв — сразу пробуем другую модель
             if r.status_code == 429:
-                if "limit: 0" in r.text or "free_tier" in r.text.lower() and attempt >= 1:
-                    last = f"{model}: нет бесплатной квоты"
+                if "limit: 0" in r.text or attempt >= 1:
+                    last = f"{model}: лимит исчерпан"
                     print(f"[gemini] {last}")
-                    break  # у этой модели нет бесплатного лимита — следующая
-                time.sleep(30 * (attempt + 1))
+                    break  # лимит этой модели кончился — пробуем следующую
+                time.sleep(20)
                 continue
             if r.status_code == 404 or (r.status_code == 400 and "model" in r.text.lower()):
                 last = f"{model}: {r.status_code}"

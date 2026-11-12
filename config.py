@@ -36,6 +36,7 @@ MIN_OWNER_AGE_DAYS = 180      # аккаунт автора старше N дн�
 MIN_README_CHARS = 1200       # README не пустышка
 MIN_CODE_BYTES = 15_000       # в репозитории реально есть код
 MAX_DAYS_SINCE_PUSH = 30      # проект живой
+SUSPICIOUS_STARS_PER_DAY = 800  # быстрее — похоже на накрутку звёзд, черновик получит пометку ⚠️
 
 BANNED_WORDS = [
     "crack", "keygen", "cheat", "aimbot", "wallhack", "spoofer", "executor",
@@ -51,7 +52,7 @@ SUSPICIOUS_LINK_HOSTS = [
 # --- Gemini -------------------------------------------------------------------
 GEMINI_MODELS = [
     m for m in [os.getenv("GEMINI_MODEL", "").strip()] if m
-] + ["gemini-flash-latest", "gemini-flash-lite-latest"]  # остальные бот узнаёт у Google сам
+] + ["gemini-flash-lite-latest", "gemini-flash-latest"]  # остальные бот узнаёт у Google сам
 GEMINI_PAUSE_SEC = 13         # пауза между запросами (бесплатный лимит)
 
 # --- Внешний вид креатива -----------------------------------------------------

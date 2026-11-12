@@ -280,6 +280,10 @@ def prepare(state, queue, posted):
 
         checks = (f"🛡 Проверка: автор на GitHub с {extra.get('owner_since') or '?'}, "
                   f"лицензия {d['license'] or '?'}, кода {extra['code_bytes'] // 1024} КБ")
+        if item.get("_velocity", 0) > config.SUSPICIOUS_STARS_PER_DAY:
+            checks += (f"\n⚠️ <b>Звёзды растут подозрительно быстро</b> (~{int(item['_velocity'])}/день) — "
+                       "возможна накрутка, проверь перед публикацией")
+            d["red_flags"] = (d["red_flags"] + " накрутка звёзд?").strip()
         if d["red_flags"]:
             checks += f"\n⚠️ <b>Внимание:</b> {esc(d['red_flags'])}"
         review = f"📝 <b>Черновик {n}/{len(picks)}</b>\n{checks}\n\n{d['caption']}"
