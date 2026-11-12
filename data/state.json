@@ -1,5 +1,7 @@
 {
- "published_count": {},
+ "published_count": {
+  "2026-11-12": 1
+ },
  "prepare_fails": {
   "date": "2026-11-12",
   "count": 1

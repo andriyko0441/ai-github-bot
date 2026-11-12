@@ -34,7 +34,7 @@
   "full_name": "storytold/photocraft",
   "url": "https://github.com/storytold/photocraft",
   "created_at": "2026-11-12T02:57:48.373784+00:00",
-  "status": "approved",
+  "status": "posted",
   "stars_short": "78.8K",
   "language": "Rust",
   "license": "Apache-2.0",
@@ -57,7 +57,8 @@
   "red_flags": "",
   "caption": "<b>PhotoCraft — аналог Photoshop на чистом Rust</b>\n\nPhotoCraft — это нативный графический редактор с открытым исходным кодом, написанный с нуля на Rust. Он воссоздаёт привычные инструменты Photoshop и работает быстро без Electron.\n\n<b>Что умеет:</b>\n• Поддержка файлов PSD, слоёв, масок и стилей\n• Быстрый рендеринг на GPU через wgpu без Electron\n• Управление через CLI, JSON и MCP-сервер для AI-агентов\n\n👤 <b>Кому пригодится:</b> Дизайнерам, разработчикам и создателям AI-агентов\n\n⭐ 78.8K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/photocraft\">Открыть на GitHub</a>\n\n#PhotoCraft #Rust #ImageEditor",
   "admin_msg_id": 5,
-  "photo_file_id": "AgACAgIAAxkDAAMFavUrLsCcxK8pB2y42CsQqCj0km4AAvogaxu-7qhL8zPrl4D3FpYBAAMCAAN3AAM9BA"
+  "photo_file_id": "AgACAgIAAxkDAAMFavUrLsCcxK8pB2y42CsQqCj0km4AAvogaxu-7qhL8zPrl4D3FpYBAAMCAAN3AAM9BA",
+  "posted_at": "2026-11-12T10:38:38.359300+01:00"
  },
  {
   "id": "036daca3",
