@@ -121,5 +121,129 @@
   "admin_msg_id": 7,
   "photo_file_id": "AgACAgIAAxkDAAMHavUtQG4TZ3FKPAtMmpH4gJTvlO0AAv8gaxu-7qhLYKQAAS_X8UeZAQADAgADdwADPQQ",
   "posted_at": "2026-11-12T20:17:57.486613+01:00"
+ },
+ {
+  "publish_from": "2026-11-13",
+  "id": "133233d8",
+  "full_name": "KnifeLemon/Filee",
+  "url": "https://github.com/KnifeLemon/Filee",
+  "created_at": "2026-11-12T20:54:45.995796+00:00",
+  "status": "pending",
+  "stars_short": "26.3K",
+  "language": "C#",
+  "license": "MIT",
+  "title": "Filee: оффлайн конвертер файлов",
+  "intro": "Filee — это бесплатный конвертер с открытым исходным кодом, который работает оффлайн прямо возле вашего курсора. Поддерживает сотни форматов документов, медиа и архивов.",
+  "features": [
+   "Конвертация 263+ форматов оффлайн",
+   "Интерфейс в виде кольца у курсора",
+   "Не требует стороннего ПО и Office"
+  ],
+  "who": "всем, кто часто конвертирует документы, медиа и архивы на компьютере",
+  "hashtags": [
+   "converter",
+   "opensource",
+   "productivity"
+  ],
+  "category": "Инструменты",
+  "card_text": "Бесплатный open-source конвертер 263+ форматов без загрузки в сеть. Перетаскивайте файлы прямо у курсора мыши.",
+  "install": "winget install KnifeLemon.Filee",
+  "red_flags": "",
+  "caption": "<b>Filee: оффлайн конвертер файлов</b>\n\nFilee — это бесплатный конвертер с открытым исходным кодом, который работает оффлайн прямо возле вашего курсора. Поддерживает сотни форматов документов, медиа и архивов.\n\n<b>Что умеет:</b>\n• Конвертация 263+ форматов оффлайн\n• Интерфейс в виде кольца у курсора\n• Не требует стороннего ПО и Office\n\n👤 <b>Кому пригодится:</b> всем, кто часто конвертирует документы, медиа и архивы на компьютере\n\n⭐ 26.3K · C# · MIT\n🔗 <a href=\"https://github.com/KnifeLemon/Filee\">Открыть на GitHub</a>\n\n#converter #opensource #productivity",
+  "admin_msg_id": 13,
+  "photo_file_id": "AgACAgIAAxkDAAMNavYnmBzYf4jAH1L1gSdxMWRMD8EAAn8laxs0F7FLTEvmGtojBKwBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-13",
+  "id": "bd3a1ea6",
+  "full_name": "yetone/magpie",
+  "url": "https://github.com/yetone/magpie",
+  "created_at": "2026-11-12T20:55:04.440158+00:00",
+  "status": "pending",
+  "stars_short": "35.4K",
+  "language": "Go",
+  "license": "MIT",
+  "title": "Magpie: Все AI-модели в одном шлюзе",
+  "intro": "Инструмент для объединения агентов и провайдеров. Позволяет запускать Claude Code на Kimi, Codex на DeepSeek и другие комбинации.",
+  "features": [
+   "Единый локальный шлюз для разных агентов и провайдеров",
+   "Автоматическое переключение на следующий аккаунт при исчерпании квоты",
+   "Маскировка конфиденциальных данных в промптах"
+  ],
+  "who": "Тем, кто использует несколько AI-агентов, провайдеров или аккаунтов.",
+  "hashtags": [
+   "ai",
+   "llm",
+   "golang"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Запускайте любые AI-агенты на нужных моделях через единый локальный шлюз и переключайте их прямо из строки меню.",
+  "install": "curl -fsSL https://usemagpie.ai/install.sh | sh",
+  "red_flags": "",
+  "caption": "<b>Magpie: Все AI-модели в одном шлюзе</b>\n\nИнструмент для объединения агентов и провайдеров. Позволяет запускать Claude Code на Kimi, Codex на DeepSeek и другие комбинации.\n\n<b>Что умеет:</b>\n• Единый локальный шлюз для разных агентов и провайдеров\n• Автоматическое переключение на следующий аккаунт при исчерпании квоты\n• Маскировка конфиденциальных данных в промптах\n\n👤 <b>Кому пригодится:</b> Тем, кто использует несколько AI-агентов, провайдеров или аккаунтов.\n\n⭐ 35.4K · Go · MIT\n🔗 <a href=\"https://github.com/yetone/magpie\">Открыть на GitHub</a>\n\n#ai #llm #golang",
+  "admin_msg_id": 14,
+  "photo_file_id": "AgACAgIAAxkDAAMOavYnqruHL8Idho01MkEY9tnZEPwAAoElaxs0F7FLXUpQbWvIwgYBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-13",
+  "id": "f1e48846",
+  "full_name": "ccch1mneyyy/dsh-Go",
+  "url": "https://github.com/ccch1mneyyy/dsh-Go",
+  "created_at": "2026-11-12T20:55:21.259147+00:00",
+  "status": "pending",
+  "stars_short": "20.7K",
+  "language": "Dart",
+  "license": "AGPL-3.0",
+  "title": "DSH Go: DeepSeek на Android и ПК",
+  "intro": "DSH Go — мобильный клиент DeepSeek Harness для Android. Позволяет запускать агента локально или удаленно управлять DSH на компьютере.",
+  "features": [
+   "Встроенная Linux-среда без Root и Termux",
+   "Удаленное управление сессиями на ПК",
+   "Интерфейс с поддержкой тем и планшетов"
+  ],
+  "who": "Разработчикам и пользователям DeepSeek Harness на Android",
+  "hashtags": [
+   "deepseek",
+   "android",
+   "aiagent"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Клиент DeepSeek Harness для Android. Запускайте прямо на телефоне или удаленно управляйте ПК-версией.",
+  "install": "git clone https://github.com/ccch1mneyyy/dsh-Go.git",
+  "red_flags": "накрутка звёзд?",
+  "caption": "<b>DSH Go: DeepSeek на Android и ПК</b>\n\nDSH Go — мобильный клиент DeepSeek Harness для Android. Позволяет запускать агента локально или удаленно управлять DSH на компьютере.\n\n<b>Что умеет:</b>\n• Встроенная Linux-среда без Root и Termux\n• Удаленное управление сессиями на ПК\n• Интерфейс с поддержкой тем и планшетов\n\n👤 <b>Кому пригодится:</b> Разработчикам и пользователям DeepSeek Harness на Android\n\n⭐ 20.7K · Dart · AGPL-3.0\n🔗 <a href=\"https://github.com/ccch1mneyyy/dsh-Go\">Открыть на GitHub</a>\n\n#deepseek #android #aiagent",
+  "admin_msg_id": 15,
+  "photo_file_id": "AgACAgIAAxkDAAMPavYnu7KbYmbw6AbiBDg5LxLpdckAAoIlaxs0F7FLNaoQTg0UCCUBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-13",
+  "id": "ccc3ce48",
+  "full_name": "wangzan101/Mika",
+  "url": "https://github.com/wangzan101/Mika",
+  "created_at": "2026-11-12T20:55:38.060384+00:00",
+  "status": "pending",
+  "stars_short": "8.4K",
+  "language": "Kotlin",
+  "license": "Apache-2.0",
+  "title": "Mika: ИИ-агент для управления Android",
+  "intro": "Mika — это локальный ИИ-агент для Android, который выполняет задачи в приложениях и браузере по одной фразе, не занимая ваш основной экран.",
+  "features": [
+   "Работает на отдельном фоновом экране",
+   "Совместим с любыми мобильными приложениями",
+   "Использует ваш собственный API-ключ модели"
+  ],
+  "who": "Владельцам Android, желающим автоматизировать рутинные задачи в приложениях.",
+  "hashtags": [
+   "Android",
+   "AIAgent",
+   "OpenSource"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Mika управляет приложениями и веб-страницами на Android по вашей команде, работая на скрытом фоновом экране.",
+  "install": "git clone https://github.com/wangzan101/Mika.git",
+  "red_flags": "",
+  "caption": "<b>Mika: ИИ-агент для управления Android</b>\n\nMika — это локальный ИИ-агент для Android, который выполняет задачи в приложениях и браузере по одной фразе, не занимая ваш основной экран.\n\n<b>Что умеет:</b>\n• Работает на отдельном фоновом экране\n• Совместим с любыми мобильными приложениями\n• Использует ваш собственный API-ключ модели\n\n👤 <b>Кому пригодится:</b> Владельцам Android, желающим автоматизировать рутинные задачи в приложениях.\n\n⭐ 8.4K · Kotlin · Apache-2.0\n🔗 <a href=\"https://github.com/wangzan101/Mika\">Открыть на GitHub</a>\n\n#Android #AIAgent #OpenSource",
+  "admin_msg_id": 16,
+  "photo_file_id": "AgACAgIAAxkDAAMQavYnzQ355OUNKnc5bfcgNg6uHdAAAoMlaxs0F7FLLAPUisvRqg8BAAMCAAN3AAM9BA"
  }
 ]
