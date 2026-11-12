@@ -6,6 +6,7 @@
  * 2. Команды админа: /status, /prepare, /help.
  * 3. Каждые 10 минут (Cron Trigger) будит основного бота на GitHub Actions.
  * 4. Страница /setup подключает Telegram к этому модулю (webhook) и проверяет настройки.
+ *    Она ничего не запускает и не показывает ключи — открыть её может кто угодно без вреда.
  *
  * Переменные (Settings → Variables and Secrets):
  *   TELEGRAM_BOT_TOKEN  (Secret) — токен от BotFather
@@ -237,10 +238,7 @@ async function setup(url, env) {
       });
       lines.push(hook.ok ? "✅ Кнопки подключены к этому модулю (webhook)" : "❌ Webhook: " + (hook.description || "ошибка"));
     }
-    if (repo.status === 200) {
-      const ok = await dispatch(env, "tick");
-      lines.push(ok ? "✅ Тестовый запуск бота на GitHub отправлен" : "❌ Не удалось запустить бота: у токена нет права Actions: Read and write");
-    }
+    // страница /setup ничего не запускает и не раскрывает — её безопасно открывать повторно
   }
   lines.push("", "Не забудь: Settings → Triggers → Cron Triggers → */10 * * * *");
   return new Response(lines.join("\n"), { headers: { "content-type": "text/plain; charset=utf-8" } });

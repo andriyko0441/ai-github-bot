@@ -117,6 +117,13 @@ def _strip_fence(text):
     return m.group(1) if m else text
 
 
+_LINK_RE = re.compile(r"(https?://\S+|www\.\S+|t\.me/\S+|\b[\w-]+\.(?:com|ru|io|net|org|xyz|app|dev|me|ly|gg|cc|to)\b\S*|@\w{3,})", re.I)
+
+
+def _strip_links(text):
+    return re.sub(r"\s{2,}", " ", _LINK_RE.sub("", str(text))).strip()
+
+
 def pick_best(candidates, how_many):
     """Gemini выбирает проекты, интересные широкой аудитории Telegram (не библиотеки для программистов)."""
     lines = []
@@ -172,6 +179,11 @@ README (фрагмент):
     if not install or install not in readme or len(install) > 90:
         install = f"git clone https://github.com/{item['full_name']}.git"
     data["install"] = install
+    # защита от «вредных» README: ссылки и упоминания в текст поста не пропускаем,
+    # единственная ссылка в посте — на сам репозиторий, её бот ставит сам
+    for k in ("title", "card_text", "intro", "who", "red_flags"):
+        data[k] = _strip_links(data.get(k) or "")
+    data["features"] = [_strip_links(f) for f in (data.get("features") or [])]
     data["features"] = [f for f in (data.get("features") or []) if f][:3]
     data["hashtags"] = [re.sub(r"[^\w]", "", h) for h in (data.get("hashtags") or [])][:3]
     for k in ("title", "card_text", "intro", "who", "category", "red_flags"):
