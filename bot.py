@@ -99,6 +99,8 @@ def process_updates(state, queue):
     by_id = {d["id"]: d for d in queue}
     while True:
         updates = tg.get_updates(state.get("update_offset", 0))
+        print(f"[tick] обновлений от Telegram: {len(updates)} "
+              f"{[k for u in updates for k in u if k != 'update_id']}")
         if not updates:
             break
         for u in updates:
@@ -314,6 +316,13 @@ def main():
     posted = load("posted.json", [])
     try:
         if args.command == "tick":
+            try:
+                me = tg.call("getMe")
+                hook = tg.call("getWebhookInfo")
+                print(f"[tick] бот @{me.get('username')}, webhook: {hook.get('url') or 'нет'}, "
+                      f"ожидает обновлений: {hook.get('pending_update_count')}")
+            except tg.TelegramError as e:
+                print(f"[tick] диагностика: {e}")
             process_updates(state, queue)
             expire_and_autoapprove(queue)
             publish_one(state, queue, posted, force=args.action == "publish-now")
