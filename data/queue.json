@@ -96,7 +96,7 @@
   "full_name": "Gathin23/cleanyourtv",
   "url": "https://github.com/Gathin23/cleanyourtv",
   "created_at": "2026-11-12T03:06:37.748572+00:00",
-  "status": "approved",
+  "status": "posted",
   "stars_short": "56.6K",
   "language": "Python",
   "license": "",
@@ -119,6 +119,7 @@
   "red_flags": "",
   "caption": "<b>CleanYourTV — очистка Android TV</b>\n\nCleanYourTV помогает без root-прав отключить телеметрию, рекламные блоки и предустановленный мусор на устройствах с Android TV или Google TV по Wi-Fi.\n\n<b>Что умеет:</b>\n• Отключение рекламы и телеметрии через ADB по Wi-Fi\n• Установка минималистичного лаунчера в стиле Apple TV\n• Обратимый процесс без рута: легко вернуть всё назад\n\n👤 <b>Кому пригодится:</b> Владельцам устройств на Android TV и Google TV\n\n⭐ 56.6K · Python\n🔗 <a href=\"https://github.com/Gathin23/cleanyourtv\">Открыть на GitHub</a>\n\n#AndroidTV #GoogleTV #CleanYourTV",
   "admin_msg_id": 7,
-  "photo_file_id": "AgACAgIAAxkDAAMHavUtQG4TZ3FKPAtMmpH4gJTvlO0AAv8gaxu-7qhLYKQAAS_X8UeZAQADAgADdwADPQQ"
+  "photo_file_id": "AgACAgIAAxkDAAMHavUtQG4TZ3FKPAtMmpH4gJTvlO0AAv8gaxu-7qhLYKQAAS_X8UeZAQADAgADdwADPQQ",
+  "posted_at": "2026-11-12T20:17:57.486613+01:00"
  }
 ]
