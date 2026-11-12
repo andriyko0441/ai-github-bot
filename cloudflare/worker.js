@@ -4,7 +4,7 @@
  * 1. Мгновенно отвечает на кнопки ✅ / ❌ в Telegram и записывает решение
  *    в репозиторий (data/decisions/<id>.json). Основной бот применит его при запуске.
  * 2. Команды админа: /status, /prepare, /help.
- * 3. Каждые 10 минут (Cron Trigger) будит основного бота на GitHub Actions.
+ * 3. Cron Trigger раз в 10 минут: в 09:00, 14:00, 20:00 и 21:00 (Мадрид) будит основного бота на GitHub.
  * 4. Страница /setup подключает Telegram к этому модулю (webhook) и проверяет настройки.
  *    Она ничего не запускает и не показывает ключи — открыть её может кто угодно без вреда.
  *
@@ -17,6 +17,13 @@
 
 const WORKFLOW = "bot.yml";
 const BRANCH = "main";
+
+// Когда будить основного бота (время Мадрида): слоты публикации и подготовка черновиков.
+// Будим только в первые 20 минут после этих моментов — так бот укладывается
+// в бесплатный лимит GitHub Actions даже для приватного репозитория (~8 запусков в день).
+const WAKE_TIMES = ["09:00", "14:00", "20:00", "21:00"];
+const WAKE_WINDOW_MIN = 20;
+const TIMEZONE = "Europe/Madrid";
 
 export default {
   async fetch(request, env, ctx) {
@@ -42,9 +49,27 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
+    if (!shouldWake(new Date(event.scheduledTime || Date.now()))) return;
     ctx.waitUntil(dispatch(env, "tick").catch((e) => console.log("dispatch error:", e.stack || e)));
   },
 };
+
+function madridMinutes(date) {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+  }).formatToParts(date);
+  const get = (t) => Number(parts.find((p) => p.type === t).value);
+  return get("hour") * 60 + get("minute");
+}
+
+export function shouldWake(date) {
+  const now = madridMinutes(date);
+  return WAKE_TIMES.some((t) => {
+    const [h, m] = t.split(":").map(Number);
+    const diff = now - (h * 60 + m);
+    return diff >= 0 && diff < WAKE_WINDOW_MIN;
+  });
+}
 
 // ---------------------------------------------------------------- Telegram ---
 
