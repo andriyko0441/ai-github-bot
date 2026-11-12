@@ -1,0 +1,65 @@
+name: ai-github-bot
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # раз в час; время Мадрида бот считает сам
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Что сделать"
+        type: choice
+        options: [tick, prepare, publish-now]
+        default: tick
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-github-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHANNEL: ${{ secrets.TELEGRAM_CHANNEL }}
+      TELEGRAM_ADMIN_ID: ${{ secrets.TELEGRAM_ADMIN_ID }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AUTO_APPROVE_AFTER_HOURS: ${{ vars.AUTO_APPROVE_AFTER_HOURS || '0' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Tick (кнопки + публикация)
+        id: tick
+        run: python bot.py tick --action "${{ github.event.inputs.action || 'tick' }}"
+
+      - name: Prepare (черновики)
+        if: steps.tick.outputs.need_prepare == 'true'
+        run: |
+          sudo apt-get update -y -qq
+          sudo apt-get install -y -qq fonts-inter fonts-jetbrains-mono fonts-noto-color-emoji
+          python -m playwright install --with-deps chromium
+          python bot.py prepare
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "ai-github-bot"
+          git config user.email "ai-github-bot@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "bot: state $(date -u +%Y-%m-%dT%H:%M)"
+            git pull --rebase --quiet || true
+            git push
+          fi
