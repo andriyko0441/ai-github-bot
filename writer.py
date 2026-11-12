@@ -15,10 +15,16 @@ class WriterError(Exception):
     pass
 
 
+_UNREACHABLE = False  # если Gemini не ответил ни одной моделью — в этом запуске больше не ждём
+
+
 def _ask(prompt, temperature=0.7):
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         raise WriterError("нет GEMINI_API_KEY")
+    global _UNREACHABLE
+    if _UNREACHABLE:
+        raise WriterError("Gemini недоступен в этом запуске")
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": temperature, "responseMimeType": "application/json"},
@@ -26,7 +32,14 @@ def _ask(prompt, temperature=0.7):
     last = None
     for model in config.GEMINI_MODELS:
         for attempt in range(3):
-            r = requests.post(ENDPOINT.format(model=model), headers={"x-goog-api-key": key}, json=body, timeout=90)
+            try:
+                r = requests.post(ENDPOINT.format(model=model), headers={"x-goog-api-key": key},
+                                  json=body, timeout=120)
+            except requests.RequestException as e:
+                last = f"{model}: {type(e).__name__}"
+                print(f"[gemini] {last}")
+                time.sleep(5)
+                break  # таймаут или обрыв — сразу пробуем другую модель
             if r.status_code == 429:
                 time.sleep(30 * (attempt + 1))
                 continue
@@ -44,6 +57,7 @@ def _ask(prompt, temperature=0.7):
             except Exception as e:  # noqa: BLE001
                 last = f"{model}: bad response {e}"
                 break
+    _UNREACHABLE = True
     raise WriterError(last or "Gemini не ответил")
 
 
