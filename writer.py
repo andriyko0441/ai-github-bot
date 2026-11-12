@@ -26,7 +26,7 @@ def _ask(prompt, temperature=0.7):
     last = None
     for model in config.GEMINI_MODELS:
         for attempt in range(3):
-            r = requests.post(ENDPOINT.format(model=model), params={"key": key}, json=body, timeout=90)
+              r = requests.post(ENDPOINT.format(model=model), headers={"x-goog-api-key": key}, json=body, timeout=90)
             if r.status_code == 429:
                 time.sleep(30 * (attempt + 1))
                 continue
