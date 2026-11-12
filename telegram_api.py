@@ -61,4 +61,5 @@ def set_buttons(chat_id, message_id, reply_markup):
     try:
         call("editMessageReplyMarkup", chat_id=chat_id, message_id=message_id, reply_markup=reply_markup)
     except TelegramError as e:
-        print(f"[tg] не удалось обновить кнопки: {e}")
+        if "not modified" not in str(e):
+            print(f"[tg] не удалось обновить кнопки: {e}")

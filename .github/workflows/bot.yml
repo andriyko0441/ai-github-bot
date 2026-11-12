@@ -2,7 +2,7 @@ name: ai-github-bot
 
 on:
   schedule:
-    # дважды в час: GitHub иногда пропускает запуски по расписанию, второй страхует.
+    # запасной будильник; основной — модуль на Cloudflare (каждые 10 минут).
     # время Мадрида бот считает сам, лишние запуски ничего не дублируют
     - cron: "13 * * * *"
     - cron: "43 * * * *"
@@ -60,9 +60,13 @@ jobs:
         run: |
           git config user.name "ai-github-bot"
           git config user.email "ai-github-bot@users.noreply.github.com"
-          git add data
+          git add -A data
           if ! git diff --cached --quiet; then
             git commit -m "bot: state $(date -u +%Y-%m-%dT%H:%M)"
-            git pull --rebase --quiet || true
-            git push
+            # модуль Cloudflare мог записать новое решение, пока шёл запуск — подтягиваем и повторяем
+            for i in 1 2 3; do
+              git pull --rebase --quiet origin main && git push && break
+              git rebase --abort 2>/dev/null || true
+              sleep 5
+            done
           fi

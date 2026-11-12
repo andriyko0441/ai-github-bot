@@ -94,13 +94,36 @@ def status_button(text):
 
 
 # ---------- обработка кнопок и команд -------------------------------------------
-def process_updates(state, queue):
+def apply_decisions(queue):
+    """Решения по кнопкам, которые записал модуль на Cloudflare (data/decisions/<id>.json)."""
+    folder = DATA / "decisions"
+    if not folder.exists():
+        return 0
+    by_id = {d["id"]: d for d in queue}
+    applied = 0
+    for f in sorted(folder.glob("*.json")):
+        try:
+            dec = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            f.unlink()
+            continue
+        d = by_id.get(dec.get("id"))
+        if d and d["status"] in ("pending", "approved", "rejected") and dec.get("status") in ("approved", "rejected"):
+            d["status"] = dec["status"]
+            applied += 1
+        f.unlink()  # применили или устарело — файл больше не нужен
+    print(f"[tick] решений с кнопок применено: {applied}")
+    return applied
+
+
+def process_updates(state, queue, webhook_mode=False):
+    apply_decisions(queue)
+    if webhook_mode:
+        return  # кнопки и команды принимает модуль на Cloudflare
     admin = int(env("TELEGRAM_ADMIN_ID"))
     by_id = {d["id"]: d for d in queue}
     while True:
         updates = tg.get_updates(state.get("update_offset", 0))
-        print(f"[tick] обновлений от Telegram: {len(updates)} "
-              f"{[k for u in updates for k in u if k != 'update_id']}")
         if not updates:
             break
         for u in updates:
@@ -323,14 +346,14 @@ def main():
     posted = load("posted.json", [])
     try:
         if args.command == "tick":
+            webhook_mode = False
             try:
-                me = tg.call("getMe")
                 hook = tg.call("getWebhookInfo")
-                print(f"[tick] бот @{me.get('username')}, webhook: {hook.get('url') or 'нет'}, "
-                      f"ожидает обновлений: {hook.get('pending_update_count')}")
+                webhook_mode = bool(hook.get("url"))
+                print(f"[tick] режим: {'Cloudflare (webhook)' if webhook_mode else 'getUpdates'}")
             except tg.TelegramError as e:
                 print(f"[tick] диагностика: {e}")
-            process_updates(state, queue)
+            process_updates(state, queue, webhook_mode)
             expire_and_autoapprove(queue)
             publish_one(state, queue, posted, force=args.action == "publish-now")
             need = args.action == "prepare" or prepare_due(state)
