@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --c1: {{c1}}; --c2: {{c2}}; --c3: {{c3}}; --c4: {{c4}};
+    --mono: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+    --sans: "Inter", "DejaVu Sans", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: {{W}}px; height: {{H}}px; overflow: hidden; }
+  body {
+    position: relative; font-family: var(--sans); color: #fff;
+    background: linear-gradient(160deg, var(--c1) 0%, var(--c2) 45%, var(--c3) 100%);
+  }
+  /* мягкие «волны» на фоне */
+  .blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .85; }
+  .b1 { width: 900px; height: 520px; left: -300px; top: 160px; background: var(--c4); transform: rotate(-12deg); }
+  .b2 { width: 1000px; height: 560px; right: -380px; top: 520px; background: var(--c2); transform: rotate(18deg); }
+  .b3 { width: 1100px; height: 520px; left: -200px; bottom: -260px; background: var(--c3); transform: rotate(-6deg); }
+  .band { position: absolute; left: -10%; width: 120%; height: 260px; border-radius: 50%; opacity: .35; filter: blur(8px); }
+  .band1 { top: 300px; background: var(--c4); transform: rotate(-7deg); }
+  .band2 { top: 820px; background: var(--c1); transform: rotate(5deg); }
+
+  .wrap { position: absolute; inset: 0; padding: 52px 64px 48px; display: flex; flex-direction: column; }
+
+  .top { display: flex; justify-content: flex-end; height: 72px; }
+  .pill {
+    background: rgba(255,255,255,.18); border: 2px solid rgba(255,255,255,.45);
+    border-radius: 40px; padding: 12px 30px; font: 700 30px var(--mono); letter-spacing: .5px;
+    backdrop-filter: blur(10px);
+  }
+
+  .window {
+    position: relative; margin-top: 20px; border-radius: 40px; padding: 22px 22px 26px;
+    background: rgba(255,255,255,.14); border: 2px solid rgba(255,255,255,.4);
+    box-shadow: 0 30px 60px rgba(0,0,0,.25); backdrop-filter: blur(16px);
+  }
+  .bar { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+  .dot { width: 22px; height: 22px; border-radius: 50%; }
+  .url {
+    flex: 1; margin-left: 18px; background: rgba(0,0,0,.25); border-radius: 22px;
+    padding: 10px 22px; font: 500 26px var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .shot { border-radius: 26px; overflow: hidden; background: #fff; height: 446px; position: relative; }
+  .shot img.og { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* запасная карточка, если картинка GitHub не загрузилась */
+  .fallback { position: absolute; inset: 0; background: #fff; color: #1f2328; padding: 46px 52px; display: none; }
+  .fallback .owner { font: 400 50px var(--sans); color: #57606a; }
+  .fallback .repo { font: 800 70px var(--sans); line-height: 1.05; margin-top: 4px; word-break: break-word; }
+  .fallback .desc { font: 400 28px var(--sans); color: #57606a; margin-top: 26px; line-height: 1.35; max-height: 120px; overflow: hidden; }
+  .fallback .stats { display: flex; gap: 44px; margin-top: 30px; font: 600 28px var(--sans); }
+  .fallback .stats span { color: #57606a; font-weight: 400; font-size: 22px; display: block; }
+  .fallback img.ava { position: absolute; right: 52px; top: 46px; width: 150px; height: 150px; border-radius: 30px; }
+  .noimg .og { display: none; } .noimg .fallback { display: block; }
+
+  .stars {
+    position: absolute; right: 30px; bottom: -36px; background: rgba(20,22,48,.82);
+    border: 2px solid rgba(255,255,255,.35); border-radius: 40px; padding: 14px 30px;
+    font: 700 34px var(--mono); display: flex; align-items: center; gap: 14px;
+  }
+  .stars i { color: #ffc83d; font-style: normal; }
+
+  .info {
+    margin-top: 58px; border-radius: 40px; padding: 34px 40px 36px;
+    background: rgba(18,20,44,.42); border: 2px solid rgba(255,255,255,.3); backdrop-filter: blur(16px);
+  }
+  .info .link { font: 700 34px var(--mono); color: #ff9cc0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .info .text { font: 700 31px/1.42 var(--mono); margin-top: 16px; max-height: 132px; overflow: hidden; }
+  .term { margin-top: 24px; background: rgba(0,0,0,.45); border-radius: 26px; padding: 20px 28px 24px; }
+  .term .dots { display: flex; gap: 12px; margin-bottom: 12px; }
+  .term .dots .dot { width: 18px; height: 18px; }
+  .term code { font: 600 30px/1.35 var(--mono); color: #8ef0a4; word-break: break-all; display: block; max-height: 82px; overflow: hidden; }
+  .term code b { color: #c9d1d9; font-weight: 600; }
+
+  .footer { margin-top: auto; padding-top: 28px; display: flex; justify-content: center; }
+  .sub {
+    background: #fff; color: #111; border-radius: 50px; padding: 18px 40px; display: flex; align-items: center; gap: 18px;
+    font: 700 34px var(--mono); box-shadow: 0 16px 40px rgba(0,0,0,.25);
+  }
+  .plane { width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(180deg,#3fb4ff,#1f8fe5);
+           display: flex; align-items: center; justify-content: center; }
+</style>
+</head>
+<body>
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="band band1"></div><div class="band band2"></div>
+
+  <div class="wrap">
+    <div class="top"><div class="pill">{{category}}</div></div>
+
+    <div class="window">
+      <div class="bar">
+        <div class="dot" style="background:#ff5f57"></div>
+        <div class="dot" style="background:#febc2e"></div>
+        <div class="dot" style="background:#28c840"></div>
+        <div class="url">github.com/{{full_name}}</div>
+      </div>
+      <div class="shot" id="shot">
+        <img class="og" src="{{og_url}}" onerror="document.getElementById('shot').classList.add('noimg')">
+        <div class="fallback">
+          <img class="ava" src="{{avatar}}" onerror="this.style.display='none'">
+          <div class="owner">{{owner}}/</div>
+          <div class="repo">{{repo}}</div>
+          <div class="desc">{{description}}</div>
+          <div class="stats">
+            <div>{{stars_short}}<span>Stars</span></div>
+            <div>{{forks_short}}<span>Forks</span></div>
+            <div>{{language}}<span>Language</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="stars"><span>{{stars_short}} stars</span><i>★</i></div>
+    </div>
+
+    <div class="info">
+      <div class="link">github.com/{{full_name}}</div>
+      <div class="text">{{card_text}}</div>
+      <div class="term">
+        <div class="dots">
+          <div class="dot" style="background:#ff5f57"></div>
+          <div class="dot" style="background:#febc2e"></div>
+          <div class="dot" style="background:#28c840"></div>
+        </div>
+        <code><b>$</b> {{install}}</code>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="sub">
+        <div class="plane">
+          <svg width="30" height="30" viewBox="0 0 24 24"><path fill="#fff" d="M2 11.5 21 4l-3.2 16-5.6-4.3-3 2.8.4-4.5L17 7.5 7.6 13.2z"/></svg>
+        </div>
+        {{handle}} · подпишись
+      </div>
+    </div>
+  </div>
+</body>
+</html>
