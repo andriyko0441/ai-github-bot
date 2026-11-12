@@ -137,7 +137,7 @@ def process_updates(state, queue):
 
 
 HELP = ("Я готовлю посты про AI-инструменты с GitHub.\n\n"
-        "Каждое утро присылаю черновики — жми ✅ или ❌.\n"
+        f"Каждый вечер в {config.PREPARE_TIME} присылаю черновики на завтра — жми ✅ или ❌.\n"
         "Одобренные выходят в канал по расписанию: " + ", ".join(config.PUBLISH_TIMES) + ".\n\n"
         "Команды:\n/status — что в очереди\n/prepare — подготовить новые черновики\n\n"
         "Кнопки срабатывают при следующем запуске бота (в течение часа).")
@@ -180,7 +180,8 @@ def publish_one(state, queue, posted, force=False):
     done = state.setdefault("published_count", {}).get(today, 0)
     if not force and (done >= passed or hhmm(now) >= QUIET_AFTER):
         return None
-    draft = next((d for d in queue if d["status"] == "approved"), None)
+    draft = next((d for d in queue if d["status"] == "approved"
+                  and d.get("publish_from", "") <= today), None)
     if not draft:
         return None
     channel = env("TELEGRAM_CHANNEL")
@@ -262,7 +263,12 @@ def prepare(state, queue, posted):
             problems.append(f"текст {item['full_name']}: {e}")
             continue
         draft_id = secrets.token_hex(4)
+        now = now_local()
+        # вечерние черновики — на завтра, утренние/дневные — можно сегодня
+        publish_from = (now.date() + dt.timedelta(days=1) if hhmm(now) >= config.PUBLISH_TIMES[-1]
+                        else now.date()).isoformat()
         d = {
+            "publish_from": publish_from,
             "id": draft_id, "full_name": item["full_name"], "url": item["html_url"],
             "created_at": dt.datetime.now(dt.timezone.utc).isoformat(), "status": "pending",
             "stars_short": render.short_num(item["stargazers_count"]),
@@ -298,7 +304,8 @@ def prepare(state, queue, posted):
         sent += 1
 
     state["last_prepare_date"] = now_local().date().isoformat()
-    report = f"Готово: {sent} черновиков. Одобренные выйдут в {', '.join(config.PUBLISH_TIMES)}."
+    when = "завтра" if hhmm(now_local()) >= config.PUBLISH_TIMES[-1] else "сегодня"
+    report = f"Готово: {sent} черновиков. Одобренные выйдут {when} в {', '.join(config.PUBLISH_TIMES)}."
     if problems:
         report += "\n\n⚠️ Проблемы:\n" + "\n".join(f"• {esc(p)}" for p in problems[:6])
     tg.send_message(admin, report[:4000])
