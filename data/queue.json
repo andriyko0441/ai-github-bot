@@ -1,1 +1,122 @@
-[]
+[
+ {
+  "id": "2548835f",
+  "full_name": "Ebony-Vinyl/dsh-our-free-model",
+  "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+  "created_at": "2026-11-12T02:56:16.212924+00:00",
+  "status": "pending",
+  "stars_short": "70.2K",
+  "language": "JavaScript",
+  "license": "MIT",
+  "title": "dsh-our-free-model — бесплатные LLM в dsh",
+  "intro": "Плагин для среды dsh, открывающий бесплатный доступ к передовым языковым моделям (DeepSeek V4.1 Flash, Kimi K3) без необходимости создавать аккаунты или вводить API-ключи.",
+  "features": [
+   "Доступ к DeepSeek V4.1, Kimi K3 и другим LLM без API-ключей",
+   "Встроенный локальный API-сервер (OpenAI и Anthropic)",
+   "Сжатие контекста и вывода инструментов для экономии токенов"
+  ],
+  "who": "Пользователям dsh и разработчикам, которым нужен удобный доступ к LLM",
+  "hashtags": [
+   "deepseek",
+   "llm",
+   "dsh"
+  ],
+  "category": "LLM плагины",
+  "card_text": "Плагин для dsh с бесплатным доступом к DeepSeek V4.1 Flash и Kimi K3 без регистрации, API-ключей и лимитов.",
+  "install": "git clone https://github.com/Ebony-Vinyl/dsh-our-free-model.git",
+  "red_flags": "",
+  "caption": "<b>dsh-our-free-model — бесплатные LLM в dsh</b>\n\nПлагин для среды dsh, открывающий бесплатный доступ к передовым языковым моделям (DeepSeek V4.1 Flash, Kimi K3) без необходимости создавать аккаунты или вводить API-ключи.\n\n<b>Что умеет:</b>\n• Доступ к DeepSeek V4.1, Kimi K3 и другим LLM без API-ключей\n• Встроенный локальный API-сервер (OpenAI и Anthropic)\n• Сжатие контекста и вывода инструментов для экономии токенов\n\n👤 <b>Кому пригодится:</b> Пользователям dsh и разработчикам, которым нужен удобный доступ к LLM\n\n⭐ 70.2K · JavaScript · MIT\n🔗 <a href=\"https://github.com/Ebony-Vinyl/dsh-our-free-model\">Открыть на GitHub</a>\n\n#deepseek #llm #dsh",
+  "admin_msg_id": 4,
+  "photo_file_id": "AgACAgIAAxkDAAMEavUq068JY-JVBnwFeyTo4KoaO4sAAvAgaxu-7qhLdXBRk1kPc4EBAAMCAAN3AAM9BA"
+ },
+ {
+  "id": "5c071bc9",
+  "full_name": "storytold/photocraft",
+  "url": "https://github.com/storytold/photocraft",
+  "created_at": "2026-11-12T02:57:48.373784+00:00",
+  "status": "pending",
+  "stars_short": "78.8K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "PhotoCraft — аналог Photoshop на чистом Rust",
+  "intro": "PhotoCraft — это нативный графический редактор с открытым исходным кодом, написанный с нуля на Rust. Он воссоздаёт привычные инструменты Photoshop и работает быстро без Electron.",
+  "features": [
+   "Поддержка файлов PSD, слоёв, масок и стилей",
+   "Быстрый рендеринг на GPU через wgpu без Electron",
+   "Управление через CLI, JSON и MCP-сервер для AI-агентов"
+  ],
+  "who": "Дизайнерам, разработчикам и создателям AI-агентов",
+  "hashtags": [
+   "PhotoCraft",
+   "Rust",
+   "ImageEditor"
+  ],
+  "category": "Графические редакторы",
+  "card_text": "Опенсорсный графический редактор на Rust: поддержка PSD, слои, эффекты и интеграция с AI-агентами.",
+  "install": "git clone https://github.com/storytold/photocraft.git",
+  "red_flags": "",
+  "caption": "<b>PhotoCraft — аналог Photoshop на чистом Rust</b>\n\nPhotoCraft — это нативный графический редактор с открытым исходным кодом, написанный с нуля на Rust. Он воссоздаёт привычные инструменты Photoshop и работает быстро без Electron.\n\n<b>Что умеет:</b>\n• Поддержка файлов PSD, слоёв, масок и стилей\n• Быстрый рендеринг на GPU через wgpu без Electron\n• Управление через CLI, JSON и MCP-сервер для AI-агентов\n\n👤 <b>Кому пригодится:</b> Дизайнерам, разработчикам и создателям AI-агентов\n\n⭐ 78.8K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/photocraft\">Открыть на GitHub</a>\n\n#PhotoCraft #Rust #ImageEditor",
+  "admin_msg_id": 5,
+  "photo_file_id": "AgACAgIAAxkDAAMFavUrLsCcxK8pB2y42CsQqCj0km4AAvogaxu-7qhL8zPrl4D3FpYBAAMCAAN3AAM9BA"
+ },
+ {
+  "id": "036daca3",
+  "full_name": "Niko1221/Strata",
+  "url": "https://github.com/Niko1221/Strata",
+  "created_at": "2026-11-12T03:01:43.550415+00:00",
+  "status": "pending",
+  "stars_short": "43.3K",
+  "language": "C++",
+  "license": "MIT",
+  "title": "Strata — запуск локальных ИИ на своем ПК",
+  "intro": "Strata — открытый C++ движок для запуска современных языковых и мультимодальных моделей на обычном железе без облаков и сторонних аккаунтов.",
+  "features": [
+   "Запуск Qwen3.8-Flash-Next и DeepSeekV4.1 на Windows, Linux и Mac",
+   "Удобный GUI с чатом и превью кода + CLI-версия для терминала",
+   "Совместимость с OpenAI и Anthropic API на localhost"
+  ],
+  "who": "Разработчикам и пользователям, запускающим нейросети локально",
+  "hashtags": [
+   "ЛокальныеНейросети",
+   "LLM",
+   "OpenSource"
+  ],
+  "category": "Локальные нейросети",
+  "card_text": "Бесплатный инструмент для работы с Qwen и DeepSeek локально. Есть удобный GUI, поддержка терминала и API.",
+  "install": "git clone https://github.com/Niko1221/Strata.git",
+  "red_flags": "",
+  "caption": "<b>Strata — запуск локальных ИИ на своем ПК</b>\n\nStrata — открытый C++ движок для запуска современных языковых и мультимодальных моделей на обычном железе без облаков и сторонних аккаунтов.\n\n<b>Что умеет:</b>\n• Запуск Qwen3.8-Flash-Next и DeepSeekV4.1 на Windows, Linux и Mac\n• Удобный GUI с чатом и превью кода + CLI-версия для терминала\n• Совместимость с OpenAI и Anthropic API на localhost\n\n👤 <b>Кому пригодится:</b> Разработчикам и пользователям, запускающим нейросети локально\n\n⭐ 43.3K · C++ · MIT\n🔗 <a href=\"https://github.com/Niko1221/Strata\">Открыть на GitHub</a>\n\n#ЛокальныеНейросети #LLM #OpenSource",
+  "admin_msg_id": 6,
+  "photo_file_id": "AgACAgIAAxkDAAMGavUsGxlvaFoNGUA4kkFO7Bf5jc4AAvsgaxu-7qhLzJHgjzYhUJwBAAMCAAN3AAM9BA"
+ },
+ {
+  "id": "ec3f0c64",
+  "full_name": "Gathin23/cleanyourtv",
+  "url": "https://github.com/Gathin23/cleanyourtv",
+  "created_at": "2026-11-12T03:06:37.748572+00:00",
+  "status": "pending",
+  "stars_short": "56.6K",
+  "language": "Python",
+  "license": "",
+  "title": "CleanYourTV — очистка Android TV",
+  "intro": "CleanYourTV помогает без root-прав отключить телеметрию, рекламные блоки и предустановленный мусор на устройствах с Android TV или Google TV по Wi-Fi.",
+  "features": [
+   "Отключение рекламы и телеметрии через ADB по Wi-Fi",
+   "Установка минималистичного лаунчера в стиле Apple TV",
+   "Обратимый процесс без рута: легко вернуть всё назад"
+  ],
+  "who": "Владельцам устройств на Android TV и Google TV",
+  "hashtags": [
+   "AndroidTV",
+   "GoogleTV",
+   "CleanYourTV"
+  ],
+  "category": "Утилиты",
+  "card_text": "Очистка Android TV и Google TV от рекламы и лишнего софта по Wi-Fi без root-прав с установкой лаунчера в стиле Apple TV.",
+  "install": "git clone https://github.com/Gathin23/cleanyourtv",
+  "red_flags": "",
+  "caption": "<b>CleanYourTV — очистка Android TV</b>\n\nCleanYourTV помогает без root-прав отключить телеметрию, рекламные блоки и предустановленный мусор на устройствах с Android TV или Google TV по Wi-Fi.\n\n<b>Что умеет:</b>\n• Отключение рекламы и телеметрии через ADB по Wi-Fi\n• Установка минималистичного лаунчера в стиле Apple TV\n• Обратимый процесс без рута: легко вернуть всё назад\n\n👤 <b>Кому пригодится:</b> Владельцам устройств на Android TV и Google TV\n\n⭐ 56.6K · Python\n🔗 <a href=\"https://github.com/Gathin23/cleanyourtv\">Открыть на GitHub</a>\n\n#AndroidTV #GoogleTV #CleanYourTV",
+  "admin_msg_id": 7,
+  "photo_file_id": "AgACAgIAAxkDAAMHavUtQG4TZ3FKPAtMmpH4gJTvlO0AAv8gaxu-7qhLYKQAAS_X8UeZAQADAgADdwADPQQ"
+ }
+]
