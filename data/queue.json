@@ -128,7 +128,7 @@
   "full_name": "KnifeLemon/Filee",
   "url": "https://github.com/KnifeLemon/Filee",
   "created_at": "2026-11-12T20:54:45.995796+00:00",
-  "status": "approved",
+  "status": "posted",
   "stars_short": "26.3K",
   "language": "C#",
   "license": "MIT",
@@ -151,7 +151,8 @@
   "red_flags": "",
   "caption": "<b>Filee: оффлайн конвертер файлов</b>\n\nFilee — это бесплатный конвертер с открытым исходным кодом, который работает оффлайн прямо возле вашего курсора. Поддерживает сотни форматов документов, медиа и архивов.\n\n<b>Что умеет:</b>\n• Конвертация 263+ форматов оффлайн\n• Интерфейс в виде кольца у курсора\n• Не требует стороннего ПО и Office\n\n👤 <b>Кому пригодится:</b> всем, кто часто конвертирует документы, медиа и архивы на компьютере\n\n⭐ 26.3K · C# · MIT\n🔗 <a href=\"https://github.com/KnifeLemon/Filee\">Открыть на GitHub</a>\n\n#converter #opensource #productivity",
   "admin_msg_id": 13,
-  "photo_file_id": "AgACAgIAAxkDAAMNavYnmBzYf4jAH1L1gSdxMWRMD8EAAn8laxs0F7FLTEvmGtojBKwBAAMCAAN3AAM9BA"
+  "photo_file_id": "AgACAgIAAxkDAAMNavYnmBzYf4jAH1L1gSdxMWRMD8EAAn8laxs0F7FLTEvmGtojBKwBAAMCAAN3AAM9BA",
+  "posted_at": "2026-11-13T09:14:11.793317+01:00"
  },
  {
   "publish_from": "2026-11-13",
