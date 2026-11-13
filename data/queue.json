@@ -246,5 +246,129 @@
   "caption": "<b>Mika: ИИ-агент для управления Android</b>\n\nMika — это локальный ИИ-агент для Android, который выполняет задачи в приложениях и браузере по одной фразе, не занимая ваш основной экран.\n\n<b>Что умеет:</b>\n• Работает на отдельном фоновом экране\n• Совместим с любыми мобильными приложениями\n• Использует ваш собственный API-ключ модели\n\n👤 <b>Кому пригодится:</b> Владельцам Android, желающим автоматизировать рутинные задачи в приложениях.\n\n⭐ 8.4K · Kotlin · Apache-2.0\n🔗 <a href=\"https://github.com/wangzan101/Mika\">Открыть на GitHub</a>\n\n#Android #AIAgent #OpenSource",
   "admin_msg_id": 16,
   "photo_file_id": "AgACAgIAAxkDAAMQavYnzQ355OUNKnc5bfcgNg6uHdAAAoMlaxs0F7FLLAPUisvRqg8BAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-14",
+  "id": "633552f4",
+  "full_name": "FrigadeHQ/yogurt",
+  "url": "https://github.com/FrigadeHQ/yogurt",
+  "created_at": "2026-11-13T21:39:57.768801+00:00",
+  "status": "pending",
+  "stars_short": "1.2K",
+  "language": "TypeScript",
+  "license": "MIT",
+  "title": "Yogurt — приватные AI-конспекты встреч",
+  "intro": "Бесплатное open-source приложение для автоматической записи и суммаризации звонков локально на компьютере без отправки данных в облако.",
+  "features": [
+   "Запись аудио и живые транскрипты без ботов",
+   "Работает полностью локально через whisper.cpp и llama.cpp",
+   "Поддержка 99 языков и экспорт в Markdown"
+  ],
+  "who": "всем, кто проводит много онлайн-встреч и ценит приватность",
+  "hashtags": [
+   "AI",
+   "OpenSource",
+   "Productivity"
+  ],
+  "category": "Локальные нейросети",
+  "card_text": "Записывайте звонки без ботов и получайте локальные AI-транскрипты с полным сохранением конфиденциальности на вашем ПК.",
+  "install": "git clone https://github.com/FrigadeHQ/yogurt.git",
+  "red_flags": "",
+  "caption": "<b>Yogurt — приватные AI-конспекты встреч</b>\n\nБесплатное open-source приложение для автоматической записи и суммаризации звонков локально на компьютере без отправки данных в облако.\n\n<b>Что умеет:</b>\n• Запись аудио и живые транскрипты без ботов\n• Работает полностью локально через whisper.cpp и llama.cpp\n• Поддержка 99 языков и экспорт в Markdown\n\n👤 <b>Кому пригодится:</b> всем, кто проводит много онлайн-встреч и ценит приватность\n\n⭐ 1.2K · TypeScript · MIT\n🔗 <a href=\"https://github.com/FrigadeHQ/yogurt\">Открыть на GitHub</a>\n\n#AI #OpenSource #Productivity",
+  "admin_msg_id": 18,
+  "photo_file_id": "AgACAgIAAxkDAAMSaveDsQP4b27xZcJJatXubRfcemQAAokbaxs0F8FLutkxv4MfE5ABAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-14",
+  "id": "93ca09b4",
+  "full_name": "seedds/nxnative",
+  "url": "https://github.com/seedds/nxnative",
+  "created_at": "2026-11-13T21:40:15.813667+00:00",
+  "status": "pending",
+  "stars_short": "15.3K",
+  "language": "Python",
+  "license": "MIT",
+  "title": "Запуск игр Switch на Apple Silicon",
+  "intro": "Инструмент для упаковки игр Nintendo Switch и Switch 2 в нативные приложения и unsigned IPA для запуска на Apple Silicon с графикой на Metal.",
+  "features": [
+   "Рендеринг графики Switch через Metal",
+   "Сборка в Mac app или IPA для устройств",
+   "Поддержка контейнеров .nup для Switch 2"
+  ],
+  "who": "Владельцам Mac, iPhone и iPad на Apple Silicon",
+  "hashtags": [
+   "NintendoSwitch",
+   "AppleSilicon",
+   "Python"
+  ],
+  "category": "Эмуляция",
+  "card_text": "Инструмент для сборки игр Nintendo Switch и Switch 2 в нативные приложения для Mac, iPhone и iPad без эмулятора.",
+  "install": "git clone https://github.com/seedds/nxnative.git && cd nxnative",
+  "red_flags": "Требует файлы ключей prod.keys для работы с NSP-образами игр",
+  "caption": "<b>Запуск игр Switch на Apple Silicon</b>\n\nИнструмент для упаковки игр Nintendo Switch и Switch 2 в нативные приложения и unsigned IPA для запуска на Apple Silicon с графикой на Metal.\n\n<b>Что умеет:</b>\n• Рендеринг графики Switch через Metal\n• Сборка в Mac app или IPA для устройств\n• Поддержка контейнеров .nup для Switch 2\n\n👤 <b>Кому пригодится:</b> Владельцам Mac, iPhone и iPad на Apple Silicon\n\n⭐ 15.3K · Python · MIT\n🔗 <a href=\"https://github.com/seedds/nxnative\">Открыть на GitHub</a>\n\n#NintendoSwitch #AppleSilicon #Python",
+  "admin_msg_id": 19,
+  "photo_file_id": "AgACAgIAAxkDAAMTaveDwibbqMTMeGxTt_Y_npA1wPwAAoobaxs0F8FLJpHctKul_dgBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-14",
+  "id": "fe4dc83b",
+  "full_name": "heydamir/unslop",
+  "url": "https://github.com/heydamir/unslop",
+  "created_at": "2026-11-13T21:40:32.881948+00:00",
+  "status": "pending",
+  "stars_short": "15.6K",
+  "language": "JavaScript",
+  "license": "CC-BY-4.0",
+  "title": "Убираем ИИ-дизайн с unslop",
+  "intro": "Инструмент убирает типовые «иишные» фишки вроде фиолетовых градиентов и кривых отступов, приводя интерфейс в порядок проход за проходом.",
+  "features": [
+   "Находит все признаки ИИ-дизайна в коде",
+   "Работает с React, Vue, Tailwind и HTML",
+   "Делает видео преображения экрана"
+  ],
+  "who": "Разработчикам и дизайнерам, уставшим от шаблонных ИИ-интерфейсов.",
+  "hashtags": [
+   "unslop",
+   "webdev",
+   "design"
+  ],
+  "category": "AI-инструменты",
+  "card_text": "Скилл для Claude Code, Codex и Google Antigravity, превращающий шаблонный ИИ-интерфейс в продуманный дизайн.",
+  "install": "git clone https://github.com/heydamir/unslop.git",
+  "red_flags": "накрутка звёзд?",
+  "caption": "<b>Убираем ИИ-дизайн с unslop</b>\n\nИнструмент убирает типовые «иишные» фишки вроде фиолетовых градиентов и кривых отступов, приводя интерфейс в порядок проход за проходом.\n\n<b>Что умеет:</b>\n• Находит все признаки ИИ-дизайна в коде\n• Работает с React, Vue, Tailwind и HTML\n• Делает видео преображения экрана\n\n👤 <b>Кому пригодится:</b> Разработчикам и дизайнерам, уставшим от шаблонных ИИ-интерфейсов.\n\n⭐ 15.6K · JavaScript · CC-BY-4.0\n🔗 <a href=\"https://github.com/heydamir/unslop\">Открыть на GitHub</a>\n\n#unslop #webdev #design",
+  "admin_msg_id": 20,
+  "photo_file_id": "AgACAgIAAxkDAAMUaveD0-IqGPjJtv8mL9Ed406h_FwAAosbaxs0F8FLtu6pWC_7vLMBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-14",
+  "id": "1c4de399",
+  "full_name": "storytold/pdfcraft",
+  "url": "https://github.com/storytold/pdfcraft",
+  "created_at": "2026-11-13T21:40:50.215488+00:00",
+  "status": "pending",
+  "stars_short": "20.6K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "PdfCraft — быстрый PDF-редактор на Rust",
+  "intro": "PdfCraft — это открытый инструмент для чтения и работы с PDF, написанный на Rust с акцентом на скорость, точность верстки и конфиденциальность.",
+  "features": [
+   "Точный рендеринг шрифтов, скриптов и эмодзи",
+   "Организация, объединение и разделение страниц",
+   "Работа оффлайн без регистрации и телеметрии"
+  ],
+  "who": "Разработчики, дизайнеры и пользователи, работающие с документами",
+  "hashtags": [
+   "pdf",
+   "rust",
+   "opensource"
+  ],
+  "category": "Документы",
+  "card_text": "Современная открытая программа для чтения и редактирования PDF на чистом Rust. Работает локально без аккаунта и телеметрии.",
+  "install": "git clone https://github.com/storytold/pdfcraft.git",
+  "red_flags": "",
+  "caption": "<b>PdfCraft — быстрый PDF-редактор на Rust</b>\n\nPdfCraft — это открытый инструмент для чтения и работы с PDF, написанный на Rust с акцентом на скорость, точность верстки и конфиденциальность.\n\n<b>Что умеет:</b>\n• Точный рендеринг шрифтов, скриптов и эмодзи\n• Организация, объединение и разделение страниц\n• Работа оффлайн без регистрации и телеметрии\n\n👤 <b>Кому пригодится:</b> Разработчики, дизайнеры и пользователи, работающие с документами\n\n⭐ 20.6K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/pdfcraft\">Открыть на GitHub</a>\n\n#pdf #rust #opensource",
+  "admin_msg_id": 21,
+  "photo_file_id": "AgACAgIAAxkDAAMVaveD5XZk5dGiyZWbTK-7F1dVjboAAowbaxs0F8FLnXpRp78qpIoBAAMCAAN3AAM9BA"
  }
 ]
