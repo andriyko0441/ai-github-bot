@@ -160,7 +160,7 @@
   "full_name": "yetone/magpie",
   "url": "https://github.com/yetone/magpie",
   "created_at": "2026-11-12T20:55:04.440158+00:00",
-  "status": "pending",
+  "status": "expired",
   "stars_short": "35.4K",
   "language": "Go",
   "license": "MIT",
@@ -191,7 +191,7 @@
   "full_name": "ccch1mneyyy/dsh-Go",
   "url": "https://github.com/ccch1mneyyy/dsh-Go",
   "created_at": "2026-11-12T20:55:21.259147+00:00",
-  "status": "pending",
+  "status": "expired",
   "stars_short": "20.7K",
   "language": "Dart",
   "license": "AGPL-3.0",
@@ -370,5 +370,129 @@
   "caption": "<b>PdfCraft — быстрый PDF-редактор на Rust</b>\n\nPdfCraft — это открытый инструмент для чтения и работы с PDF, написанный на Rust с акцентом на скорость, точность верстки и конфиденциальность.\n\n<b>Что умеет:</b>\n• Точный рендеринг шрифтов, скриптов и эмодзи\n• Организация, объединение и разделение страниц\n• Работа оффлайн без регистрации и телеметрии\n\n👤 <b>Кому пригодится:</b> Разработчики, дизайнеры и пользователи, работающие с документами\n\n⭐ 20.6K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/pdfcraft\">Открыть на GitHub</a>\n\n#pdf #rust #opensource",
   "admin_msg_id": 21,
   "photo_file_id": "AgACAgIAAxkDAAMVaveD5XZk5dGiyZWbTK-7F1dVjboAAowbaxs0F8FLnXpRp78qpIoBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-15",
+  "id": "b754def9",
+  "full_name": "KKKKhazix/agent-autoloop",
+  "url": "https://github.com/KKKKhazix/agent-autoloop",
+  "created_at": "2026-11-14T20:57:03.038474+00:00",
+  "status": "pending",
+  "stars_short": "5.3K",
+  "language": "TypeScript",
+  "license": "MIT",
+  "title": "Agent Autoloop: фоновые AI-агенты для CLI",
+  "intro": "Легкий автоматический中台 для командных AI-агентов. Работает локально, сам выполняет рутину и беспокоит вас только тогда, когда нужен выбор.",
+  "features": [
+   "Запуск задач по расписанию или через вебхуки",
+   "Интеграция с Claude Code, Codex, ACP и другими",
+   "Уведомления в Telegram, Slack, Discord или на рабочий стол"
+  ],
+  "who": "Разработчикам и пользователям CLI AI-агентов",
+  "hashtags": [
+   "aiagents",
+   "automation",
+   "typescript"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Запускайте Claude Code и Codex в фоне: они сами делают задачи, а по сложным вопросам присылают карточки для решения.",
+  "install": "curl -fsSL https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.sh | sh",
+  "red_flags": "",
+  "caption": "<b>Agent Autoloop: фоновые AI-агенты для CLI</b>\n\nЛегкий автоматический中台 для командных AI-агентов. Работает локально, сам выполняет рутину и беспокоит вас только тогда, когда нужен выбор.\n\n<b>Что умеет:</b>\n• Запуск задач по расписанию или через вебхуки\n• Интеграция с Claude Code, Codex, ACP и другими\n• Уведомления в Telegram, Slack, Discord или на рабочий стол\n\n👤 <b>Кому пригодится:</b> Разработчикам и пользователям CLI AI-агентов\n\n⭐ 5.3K · TypeScript · MIT\n🔗 <a href=\"https://github.com/KKKKhazix/agent-autoloop\">Открыть на GitHub</a>\n\n#aiagents #automation #typescript",
+  "admin_msg_id": 23,
+  "photo_file_id": "AgACAgIAAxkDAAMXavjLIUQpJAk9kE5EdciXBl4Ps28AAiIiaxvL2cBLizb7e_4Eyq0BAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-15",
+  "id": "579036d5",
+  "full_name": "wheresryan22/anatomy",
+  "url": "https://github.com/wheresryan22/anatomy",
+  "created_at": "2026-11-14T20:57:20.474565+00:00",
+  "status": "pending",
+  "stars_short": "27.3K",
+  "language": "JavaScript",
+  "license": "MIT",
+  "title": "Anatomy: визуализация идей в AI-агентах",
+  "intro": "Новый open-source скилл для Claude Code и других агентов, который объясняет концепты через создание работающих интерактивных объектов.",
+  "features": [
+   "Генерирует SVG, WebGL и 3D-иллюстрации",
+   "Работает в Claude Code, OpenCode, Codex и других",
+   "Не требует сторонних зависимостей (Node.js)"
+  ],
+  "who": "Разработчикам и пользователям AI-агентов",
+  "hashtags": [
+   "ai",
+   "opensource",
+   "svg"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Навык для ИИ-агентов, создающий интерактивные изометрические иллюстрации сложных систем и механизмов в SVG, WebGL и 3D.",
+  "install": "npx skills add wheresryan22/anatomy -g",
+  "red_flags": "",
+  "caption": "<b>Anatomy: визуализация идей в AI-агентах</b>\n\nНовый open-source скилл для Claude Code и других агентов, который объясняет концепты через создание работающих интерактивных объектов.\n\n<b>Что умеет:</b>\n• Генерирует SVG, WebGL и 3D-иллюстрации\n• Работает в Claude Code, OpenCode, Codex и других\n• Не требует сторонних зависимостей (Node.js)\n\n👤 <b>Кому пригодится:</b> Разработчикам и пользователям AI-агентов\n\n⭐ 27.3K · JavaScript · MIT\n🔗 <a href=\"https://github.com/wheresryan22/anatomy\">Открыть на GitHub</a>\n\n#ai #opensource #svg",
+  "admin_msg_id": 24,
+  "photo_file_id": "AgACAgIAAxkDAAMYavjLMzAh2tUXTJ0opYgxxRUYBCMAAiMiaxvL2cBLbaQitH5vzrABAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-15",
+  "id": "734bd081",
+  "full_name": "browser-use/jev-ultrafast",
+  "url": "https://github.com/browser-use/jev-ultrafast",
+  "created_at": "2026-11-14T20:57:37.522994+00:00",
+  "status": "pending",
+  "stars_short": "24.5K",
+  "language": "Python",
+  "license": "MIT",
+  "title": "Jev Ultrafast: быстрый веб-агент",
+  "intro": "Оригинальный эксперимент Jev Ultrafast теперь встроен в Browser Use как быстрый режим. Агент выполняет задачи за один сетевой запрос.",
+  "features": [
+   "Один сетевой запрос на цикл решения",
+   "Поддержка кликов, ввода текста и прокрутки",
+   "Работает на базе Python и LLM"
+  ],
+  "who": "Разработчикам и исследователям веб-автоматизации",
+  "hashtags": [
+   "ai",
+   "python",
+   "automation"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Быстрый веб-агент с динамическим индексированным пространством действий для автоматизации задач в браузере.",
+  "install": "pip install browser-use",
+  "red_flags": "",
+  "caption": "<b>Jev Ultrafast: быстрый веб-агент</b>\n\nОригинальный эксперимент Jev Ultrafast теперь встроен в Browser Use как быстрый режим. Агент выполняет задачи за один сетевой запрос.\n\n<b>Что умеет:</b>\n• Один сетевой запрос на цикл решения\n• Поддержка кликов, ввода текста и прокрутки\n• Работает на базе Python и LLM\n\n👤 <b>Кому пригодится:</b> Разработчикам и исследователям веб-автоматизации\n\n⭐ 24.5K · Python · MIT\n🔗 <a href=\"https://github.com/browser-use/jev-ultrafast\">Открыть на GitHub</a>\n\n#ai #python #automation",
+  "admin_msg_id": 25,
+  "photo_file_id": "AgACAgIAAxkDAAMZavjLRB8IDy5eclE93a4Pa9l4cu4AAiQiaxvL2cBLyClMNis8tpgBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-15",
+  "id": "39b0dc5d",
+  "full_name": "lemomo-ai/lemo-opuscar",
+  "url": "https://github.com/lemomo-ai/lemo-opuscar",
+  "created_at": "2026-11-14T20:57:54.659689+00:00",
+  "status": "pending",
+  "stars_short": "16.1K",
+  "language": "JavaScript",
+  "license": "",
+  "title": "Lemo-Opuscar: 99 стилей для генерации видео через Claude Code",
+  "intro": "Набор инструментов для Claude Code, содержащий 99 готовых стилей для создания видеороликов и короткометражек исключительно с помощью написания кода агентом.",
+  "features": [
+   "99 готовых стилей в 15 категориях",
+   "Генерация видео и звука через код",
+   "Поддержка кастомизации стилей"
+  ],
+  "who": "Разработчикам и авторам контента, использующим Claude Code.",
+  "hashtags": [
+   "ClaudeCode",
+   "AIVideo",
+   "AIgents"
+  ],
+  "category": "Генерация видео",
+  "card_text": "Инструмент для Claude Code: 99 готовых визуальных стилей и промптов для создания короткометражных фильмов целиком с помощью кода.",
+  "install": "git clone https://github.com/lemomo-ai/lemo-opuscar.git",
+  "red_flags": "",
+  "caption": "<b>Lemo-Opuscar: 99 стилей для генерации видео через Claude Code</b>\n\nНабор инструментов для Claude Code, содержащий 99 готовых стилей для создания видеороликов и короткометражек исключительно с помощью написания кода агентом.\n\n<b>Что умеет:</b>\n• 99 готовых стилей в 15 категориях\n• Генерация видео и звука через код\n• Поддержка кастомизации стилей\n\n👤 <b>Кому пригодится:</b> Разработчикам и авторам контента, использующим Claude Code.\n\n⭐ 16.1K · JavaScript\n🔗 <a href=\"https://github.com/lemomo-ai/lemo-opuscar\">Открыть на GitHub</a>\n\n#ClaudeCode #AIVideo #AIgents",
+  "admin_msg_id": 26,
+  "photo_file_id": "AgACAgIAAxkDAAMaavjLVab-hresmEqTUhdsPqJBxuYAAiYiaxvL2cBLNb1JxD_EzUkBAAMCAAN3AAM9BA"
  }
 ]
