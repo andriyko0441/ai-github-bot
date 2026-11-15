@@ -494,5 +494,129 @@
   "caption": "<b>Lemo-Opuscar: 99 стилей для генерации видео через Claude Code</b>\n\nНабор инструментов для Claude Code, содержащий 99 готовых стилей для создания видеороликов и короткометражек исключительно с помощью написания кода агентом.\n\n<b>Что умеет:</b>\n• 99 готовых стилей в 15 категориях\n• Генерация видео и звука через код\n• Поддержка кастомизации стилей\n\n👤 <b>Кому пригодится:</b> Разработчикам и авторам контента, использующим Claude Code.\n\n⭐ 16.1K · JavaScript\n🔗 <a href=\"https://github.com/lemomo-ai/lemo-opuscar\">Открыть на GitHub</a>\n\n#ClaudeCode #AIVideo #AIgents",
   "admin_msg_id": 26,
   "photo_file_id": "AgACAgIAAxkDAAMaavjLVab-hresmEqTUhdsPqJBxuYAAiYiaxvL2cBLNb1JxD_EzUkBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-16",
+  "id": "c903e87f",
+  "full_name": "DIYgod/pinky",
+  "url": "https://github.com/DIYgod/pinky",
+  "created_at": "2026-11-15T21:17:08.129359+00:00",
+  "status": "pending",
+  "stars_short": "2.2K",
+  "language": "Go",
+  "license": "Apache-2.0",
+  "title": "AI-агенты для управления смартфоном",
+  "intro": "Инструмент на Go, который подключает любые MCP-агенты к реальным смартфонам под управлением Android и iOS под вашим контролем.",
+  "features": [
+   "Поддержка Claude Code, Cursor, MCP-агентов",
+   "Защита от случайных оплат и опасных шагов",
+   "Работа на macOS, Windows и Linux"
+  ],
+  "who": "Разработчикам и пользователям AI-агентов для автоматизации телефона",
+  "hashtags": [
+   "aiagent",
+   "mcp",
+   "automation"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Позволяет AI-агентам вроде Claude Code и Cursor управлять вашим iPhone или Android через MCP, защищая от рискованных действий.",
+  "install": "git clone https://github.com/DIYgod/pinky.git",
+  "red_flags": "Проект имеет статус pre-alpha",
+  "caption": "<b>AI-агенты для управления смартфоном</b>\n\nИнструмент на Go, который подключает любые MCP-агенты к реальным смартфонам под управлением Android и iOS под вашим контролем.\n\n<b>Что умеет:</b>\n• Поддержка Claude Code, Cursor, MCP-агентов\n• Защита от случайных оплат и опасных шагов\n• Работа на macOS, Windows и Linux\n\n👤 <b>Кому пригодится:</b> Разработчикам и пользователям AI-агентов для автоматизации телефона\n\n⭐ 2.2K · Go · Apache-2.0\n🔗 <a href=\"https://github.com/DIYgod/pinky\">Открыть на GitHub</a>\n\n#aiagent #mcp #automation",
+  "admin_msg_id": 28,
+  "photo_file_id": "AgACAgIAAxkDAAMcavohWDRwocUEfJYj6bfhak-DDTUAAlAjaxtGnNBLyxXtiyXmKY4BAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-16",
+  "id": "c724edfc",
+  "full_name": "pengchujin/aerial-tv",
+  "url": "https://github.com/pengchujin/aerial-tv",
+  "created_at": "2026-11-15T21:17:27.060372+00:00",
+  "status": "pending",
+  "stars_short": "12K",
+  "language": "Kotlin",
+  "license": "MIT",
+  "title": "Чистый tvOS-лаунчер для умных телевизоров",
+  "intro": "Замените перегруженный рекламой родной интерфейс国产电视 на чистый лаунчер в стиле tvOS с поддержкой нативных 4K-аэросъемных заставок.",
+  "features": [
+   "Никакой рекламы и рекомендаций",
+   "Управление с телефона через QR-код",
+   "Сотни часов 4K-эаросъемных заставок"
+  ],
+  "who": "Владельцам Android-телевизоров и приставок, уставшим от рекламы",
+  "hashtags": [
+   "AndroidTV",
+   "OpenSource",
+   "Launcher"
+  ],
+  "category": "Android TV",
+  "card_text": "Открытый Android TV лаунчер в стиле Apple TV без рекламы и рекомендаций для Xiaomi, TCL, Sony и других ТВ.",
+  "install": "curl -fsSL https://aerial.qust.me/install.sh | KEEP_ADB=1 TV=192.168.1.20 bash",
+  "red_flags": "",
+  "caption": "<b>Чистый tvOS-лаунчер для умных телевизоров</b>\n\nЗамените перегруженный рекламой родной интерфейс国产电视 на чистый лаунчер в стиле tvOS с поддержкой нативных 4K-аэросъемных заставок.\n\n<b>Что умеет:</b>\n• Никакой рекламы и рекомендаций\n• Управление с телефона через QR-код\n• Сотни часов 4K-эаросъемных заставок\n\n👤 <b>Кому пригодится:</b> Владельцам Android-телевизоров и приставок, уставшим от рекламы\n\n⭐ 12K · Kotlin · MIT\n🔗 <a href=\"https://github.com/pengchujin/aerial-tv\">Открыть на GitHub</a>\n\n#AndroidTV #OpenSource #Launcher",
+  "admin_msg_id": 29,
+  "photo_file_id": "AgACAgIAAxkDAAMdavohaYaGWJRrolO_CiVPWhis0K4AAlEjaxtGnNBLBAI78gLP-DQBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-16",
+  "id": "c8714f11",
+  "full_name": "storytold/lightcraft",
+  "url": "https://github.com/storytold/lightcraft",
+  "created_at": "2026-11-15T21:17:44.119047+00:00",
+  "status": "pending",
+  "stars_short": "16K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "LightCraft — фоторедактор на Rust",
+  "intro": "Open-source фоторедактор и менеджер библиотек, написанный на чистом Rust. Работает локально, в браузере через WebAssembly и управляется AI-агентами по MCP.",
+  "features": [
+   "Неразрушающая 32-битная float обработка",
+   "Поддержка macOS, Windows, Linux и Web",
+   "Управление AI-агентами через MCP сервер"
+  ],
+  "who": "фотографам, разработчикам и энтузиастам цифрового творчества",
+  "hashtags": [
+   "Rust",
+   "OpenSource",
+   "Photography"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Открытый неразрушающий редактор RAW-фотографий на чистом Rust с поддержкой управления через AI-агенты по MCP.",
+  "install": "git clone https://github.com/storytold/lightcraft.git",
+  "red_flags": "",
+  "caption": "<b>LightCraft — фоторедактор на Rust</b>\n\nOpen-source фоторедактор и менеджер библиотек, написанный на чистом Rust. Работает локально, в браузере через WebAssembly и управляется AI-агентами по MCP.\n\n<b>Что умеет:</b>\n• Неразрушающая 32-битная float обработка\n• Поддержка macOS, Windows, Linux и Web\n• Управление AI-агентами через MCP сервер\n\n👤 <b>Кому пригодится:</b> фотографам, разработчикам и энтузиастам цифрового творчества\n\n⭐ 16K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/lightcraft\">Открыть на GitHub</a>\n\n#Rust #OpenSource #Photography",
+  "admin_msg_id": 30,
+  "photo_file_id": "AgACAgIAAxkDAAMeavohegJkDhSiKZd8NVAXuzWlM28AAlIjaxtGnNBLuMvXj0s-ePYBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-16",
+  "id": "4faeedf9",
+  "full_name": "expo/exact",
+  "url": "https://github.com/expo/exact",
+  "created_at": "2026-11-15T21:18:01.155622+00:00",
+  "status": "pending",
+  "stars_short": "4.3K",
+  "language": "Rust",
+  "license": "MIT",
+  "title": "Exact: кроссплатформенный рантайм для ИИ-агентов",
+  "intro": "Инструмент для разработки кроссплатформенных приложений, созданный с расчетом на то, что код и тесты будут писать AI-агенты без участия человека.",
+  "features": [
+   "Компиляция интерфейса Contract на веб, macOS, iOS и Linux",
+   "Управление агентом через 10 универсальных команд",
+   "Отсутствие вебвью и JavaScript-моста в UI"
+  ],
+  "who": "Разработчикам кроссплатформенных приложений и создателям автономных AI-агентов",
+  "hashtags": [
+   "AI",
+   "Rust",
+   "CrossPlatform"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Пишите приложение один раз — оно работает на веб, macOS, iOS и Linux, а ИИ-агент может сам собирать, запускать и тестировать его.",
+  "install": "git clone https://github.com/expo/exact",
+  "red_flags": "Проект пре-1.0, меняется ежедневно, нет стабильного API и обратной совместимости.",
+  "caption": "<b>Exact: кроссплатформенный рантайм для ИИ-агентов</b>\n\nИнструмент для разработки кроссплатформенных приложений, созданный с расчетом на то, что код и тесты будут писать AI-агенты без участия человека.\n\n<b>Что умеет:</b>\n• Компиляция интерфейса Contract на веб, macOS, iOS и Linux\n• Управление агентом через 10 универсальных команд\n• Отсутствие вебвью и JavaScript-моста в UI\n\n👤 <b>Кому пригодится:</b> Разработчикам кроссплатформенных приложений и создателям автономных AI-агентов\n\n⭐ 4.3K · Rust · MIT\n🔗 <a href=\"https://github.com/expo/exact\">Открыть на GitHub</a>\n\n#AI #Rust #CrossPlatform",
+  "admin_msg_id": 31,
+  "photo_file_id": "AgACAgIAAxkDAAMfavohjIe3zr_f8WSTr4xmr6V7VsUAAlMjaxtGnNBLAAEFN0jwjtHPAQADAgADeQADPQQ"
  }
 ]
