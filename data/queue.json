@@ -618,5 +618,129 @@
   "caption": "<b>Exact: кроссплатформенный рантайм для ИИ-агентов</b>\n\nИнструмент для разработки кроссплатформенных приложений, созданный с расчетом на то, что код и тесты будут писать AI-агенты без участия человека.\n\n<b>Что умеет:</b>\n• Компиляция интерфейса Contract на веб, macOS, iOS и Linux\n• Управление агентом через 10 универсальных команд\n• Отсутствие вебвью и JavaScript-моста в UI\n\n👤 <b>Кому пригодится:</b> Разработчикам кроссплатформенных приложений и создателям автономных AI-агентов\n\n⭐ 4.3K · Rust · MIT\n🔗 <a href=\"https://github.com/expo/exact\">Открыть на GitHub</a>\n\n#AI #Rust #CrossPlatform",
   "admin_msg_id": 31,
   "photo_file_id": "AgACAgIAAxkDAAMfavohjIe3zr_f8WSTr4xmr6V7VsUAAlMjaxtGnNBLAAEFN0jwjtHPAQADAgADeQADPQQ"
+ },
+ {
+  "publish_from": "2026-11-17",
+  "id": "04741b65",
+  "full_name": "KKKKhazix/AIHOT",
+  "url": "https://github.com/KKKKhazix/AIHOT",
+  "created_at": "2026-11-16T20:25:17.442487+00:00",
+  "status": "pending",
+  "stars_short": "10.8K",
+  "language": "TypeScript",
+  "license": "MIT",
+  "title": "AIHOT — движок для генерации индустриальных дайджестов",
+  "intro": "Открытый фреймворк для создания собственного новостного и тематического AI-сайта. Собирает данные, фильтрует, кластеризует события и пишет ежедневные отчеты.",
+  "features": [
+   "Поддержка 6 типов источников, включая RSS и X",
+   "Двойная независимая оценка и фильтрация через LLM",
+   "Автоматическое объединение дубликатов в единые события"
+  ],
+  "who": "разработчикам и энтузиастам для создания нишевых медиа",
+  "hashtags": [
+   "AIHOT",
+   "LLM",
+   "TypeScript"
+  ],
+  "category": "AI-инструменты",
+  "card_text": "Сайт-фреймворк, который автоматически собирает новости, фильтрует их через LLM и формирует утренние дайджесты.",
+  "install": "git clone https://github.com/KKKKhazix/AIHOT.git",
+  "red_flags": "",
+  "caption": "<b>AIHOT — движок для генерации индустриальных дайджестов</b>\n\nОткрытый фреймворк для создания собственного новостного и тематического AI-сайта. Собирает данные, фильтрует, кластеризует события и пишет ежедневные отчеты.\n\n<b>Что умеет:</b>\n• Поддержка 6 типов источников, включая RSS и X\n• Двойная независимая оценка и фильтрация через LLM\n• Автоматическое объединение дубликатов в единые события\n\n👤 <b>Кому пригодится:</b> разработчикам и энтузиастам для создания нишевых медиа\n\n⭐ 10.8K · TypeScript · MIT\n🔗 <a href=\"https://github.com/KKKKhazix/AIHOT\">Открыть на GitHub</a>\n\n#AIHOT #LLM #TypeScript",
+  "admin_msg_id": 33,
+  "photo_file_id": "AgACAgIAAxkDAAMhavtmtXOhbolbxNHNOZ8j-OgmyTUAAmMeaxtGnOBL0iz10tpfzpgBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-17",
+  "id": "1f0d1b7d",
+  "full_name": "storytold/filmcraft",
+  "url": "https://github.com/storytold/filmcraft",
+  "created_at": "2026-11-16T20:25:45.235038+00:00",
+  "status": "pending",
+  "stars_short": "18.4K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "FilmCraft: Нелинейный видеоредактор на Rust",
+  "intro": "FilmCraft — это профессиональный нелинейный видеоредактор на чистом Rust с собственными кодеками и поддержкой управления через AI-агентов.",
+  "features": [
+   "Нативная работа на macOS, Windows, Linux и в WebAssembly",
+   "Собственные кодеки H.264, HEVC, ProRes и AAC на Rust",
+   "Каждое действие доступно для управления через AI-агентов"
+  ],
+  "who": "Видеомонтажерам, разработчикам и энтузиастам открытого софта",
+  "hashtags": [
+   "FilmCraft",
+   "Rust",
+   "VideoEditor"
+  ],
+  "category": "Редактирование видео",
+  "card_text": "Профессиональный нелинейный видеоредактор с открытым исходным кодом, написанный на чистом Rust для macOS, Windows, Linux и браузера.",
+  "install": "git clone https://github.com/storytold/filmcraft.git",
+  "red_flags": "",
+  "caption": "<b>FilmCraft: Нелинейный видеоредактор на Rust</b>\n\nFilmCraft — это профессиональный нелинейный видеоредактор на чистом Rust с собственными кодеками и поддержкой управления через AI-агентов.\n\n<b>Что умеет:</b>\n• Нативная работа на macOS, Windows, Linux и в WebAssembly\n• Собственные кодеки H.264, HEVC, ProRes и AAC на Rust\n• Каждое действие доступно для управления через AI-агентов\n\n👤 <b>Кому пригодится:</b> Видеомонтажерам, разработчикам и энтузиастам открытого софта\n\n⭐ 18.4K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/filmcraft\">Открыть на GitHub</a>\n\n#FilmCraft #Rust #VideoEditor",
+  "admin_msg_id": 34,
+  "photo_file_id": "AgACAgIAAxkDAAMiavtmy-MU4IBG0IB-Vml5p_SpsWIAAmQeaxtGnOBL4ZZ8jIzWpDoBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-17",
+  "id": "50aa6fdb",
+  "full_name": "anefzaoui/misterdownloadmanager",
+  "url": "https://github.com/anefzaoui/misterdownloadmanager",
+  "created_at": "2026-11-16T20:26:01.896054+00:00",
+  "status": "pending",
+  "stars_short": "11.1K",
+  "language": "Rust",
+  "license": "GPL-3.0",
+  "title": "Mister Download Manager — быстрый менеджер закачек",
+  "intro": "Mister Download Manager (MDM) — это чистый open-source менеджер закачек, написанный на Rust с нуля. Работает на Windows, macOS и Linux.",
+  "features": [
+   "Полная поддержка торрентов и magnet-ссылок",
+   "Высокая скорость загрузки файлов",
+   "Без рекламы, триалов и регистрации"
+  ],
+  "who": "всем, кто ищет бесплатную и быструю замену IDM",
+  "hashtags": [
+   "Rust",
+   "DownloadManager",
+   "OpenSource"
+  ],
+  "category": "Утилиты",
+  "card_text": "Open-source менеджер загрузок на Rust для Windows, Mac и Linux. Бесплатно и быстрее IDM.",
+  "install": "git clone https://github.com/anefzaoui/misterdownloadmanager.git",
+  "red_flags": "",
+  "caption": "<b>Mister Download Manager — быстрый менеджер закачек</b>\n\nMister Download Manager (MDM) — это чистый open-source менеджер закачек, написанный на Rust с нуля. Работает на Windows, macOS и Linux.\n\n<b>Что умеет:</b>\n• Полная поддержка торрентов и magnet-ссылок\n• Высокая скорость загрузки файлов\n• Без рекламы, триалов и регистрации\n\n👤 <b>Кому пригодится:</b> всем, кто ищет бесплатную и быструю замену IDM\n\n⭐ 11.1K · Rust · GPL-3.0\n🔗 <a href=\"https://github.com/anefzaoui/misterdownloadmanager\">Открыть на GitHub</a>\n\n#Rust #DownloadManager #OpenSource",
+  "admin_msg_id": 35,
+  "photo_file_id": "AgACAgIAAxkDAAMjavtm3PpAaVOBjEBcuufrPZeRKaAAAmUeaxtGnOBLjajcx9f0WrQBAAMCAAN5AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-17",
+  "id": "7205a1d2",
+  "full_name": "n4ze3m/tiny-voca",
+  "url": "https://github.com/n4ze3m/tiny-voca",
+  "created_at": "2026-11-16T20:26:18.850885+00:00",
+  "status": "pending",
+  "stars_short": "586",
+  "language": "Python",
+  "license": "Apache-2.0",
+  "title": "Tiny-Voca: Легкая локальная TTS-модель",
+  "intro": "Tiny-voca — миниатюрная языковая модель для синтеза речи на английском языке. Весит всего 18 МБ, работает на CPU или в браузере.",
+  "features": [
+   "4.5M параметров, вес всего 18 МБ",
+   "Два голоса: женский (F2) и мужской (M2)",
+   "Поддержка PyTorch, ONNX и ONNX Runtime Web"
+  ],
+  "who": "Разработчикам, создающим локальные приложения с синтезом речи.",
+  "hashtags": [
+   "AI",
+   "TTS",
+   "Python"
+  ],
+  "category": "Локальные нейросети",
+  "card_text": "Компактная англоязычная модель синтеза речи (TTS) на 4.5M параметров. Работает локально на CPU и в браузере.",
+  "install": "git clone https://github.com/n4ze3m/tiny-voca.git",
+  "red_flags": "",
+  "caption": "<b>Tiny-Voca: Легкая локальная TTS-модель</b>\n\nTiny-voca — миниатюрная языковая модель для синтеза речи на английском языке. Весит всего 18 МБ, работает на CPU или в браузере.\n\n<b>Что умеет:</b>\n• 4.5M параметров, вес всего 18 МБ\n• Два голоса: женский (F2) и мужской (M2)\n• Поддержка PyTorch, ONNX и ONNX Runtime Web\n\n👤 <b>Кому пригодится:</b> Разработчикам, создающим локальные приложения с синтезом речи.\n\n⭐ 586 · Python · Apache-2.0\n🔗 <a href=\"https://github.com/n4ze3m/tiny-voca\">Открыть на GitHub</a>\n\n#AI #TTS #Python",
+  "admin_msg_id": 36,
+  "photo_file_id": "AgACAgIAAxkDAAMkavtm7TluZXl_WlLarYKrIbYXW1AAAmYeaxtGnOBLTQoRMkv286IBAAMCAAN3AAM9BA"
  }
 ]
