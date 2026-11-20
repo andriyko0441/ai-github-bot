@@ -742,5 +742,36 @@
   "caption": "<b>Tiny-Voca: Легкая локальная TTS-модель</b>\n\nTiny-voca — миниатюрная языковая модель для синтеза речи на английском языке. Весит всего 18 МБ, работает на CPU или в браузере.\n\n<b>Что умеет:</b>\n• 4.5M параметров, вес всего 18 МБ\n• Два голоса: женский (F2) и мужской (M2)\n• Поддержка PyTorch, ONNX и ONNX Runtime Web\n\n👤 <b>Кому пригодится:</b> Разработчикам, создающим локальные приложения с синтезом речи.\n\n⭐ 586 · Python · Apache-2.0\n🔗 <a href=\"https://github.com/n4ze3m/tiny-voca\">Открыть на GitHub</a>\n\n#AI #TTS #Python",
   "admin_msg_id": 36,
   "photo_file_id": "AgACAgIAAxkDAAMkavtm7TluZXl_WlLarYKrIbYXW1AAAmYeaxtGnOBLTQoRMkv286IBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-21",
+  "id": "6a41da7a",
+  "full_name": "simplexai-labs/linger",
+  "url": "https://github.com/simplexai-labs/linger",
+  "created_at": "2026-11-20T20:06:17.226244+00:00",
+  "status": "pending",
+  "stars_short": "2.8K",
+  "language": "TypeScript",
+  "license": "",
+  "title": "Linger: локальный AI-агент на вашем ПК",
+  "intro": "Linger — это open-source персональный агент с мозгом уровня Claude, который работает прямо на вашем ПК и не требует облачных подписок.",
+  "features": [
+   "Запуск 125B моделей на 12 ГБ видеокарте",
+   "Локальная память и автономная работа с приложениями",
+   "Команда агентов для рутинных задач"
+  ],
+  "who": "Всем, кто хочет запускать мощный локальный ИИ без облачных сервисов",
+  "hashtags": [
+   "LocalLLM",
+   "AI",
+   "OpenSource"
+  ],
+  "category": "Локальные нейросети",
+  "card_text": "Открытый персональный агент, работающий локально благодаря движку PolyStrata. Запуск мощных моделей на обычной видеокарте.",
+  "install": "git clone https://github.com/simplexai-labs/linger.git",
+  "red_flags": "",
+  "caption": "<b>Linger: локальный AI-агент на вашем ПК</b>\n\nLinger — это open-source персональный агент с мозгом уровня Claude, который работает прямо на вашем ПК и не требует облачных подписок.\n\n<b>Что умеет:</b>\n• Запуск 125B моделей на 12 ГБ видеокарте\n• Локальная память и автономная работа с приложениями\n• Команда агентов для рутинных задач\n\n👤 <b>Кому пригодится:</b> Всем, кто хочет запускать мощный локальный ИИ без облачных сервисов\n\n⭐ 2.8K · TypeScript\n🔗 <a href=\"https://github.com/simplexai-labs/linger\">Открыть на GitHub</a>\n\n#LocalLLM #AI #OpenSource",
+  "admin_msg_id": 40,
+  "photo_file_id": "AgACAgIAAxkDAAMoawABqDw2hMpBRKMyYAABl2EIax2O9wACLCVrG2iRAUirFWTGzXOHkAEAAwIAA3cAAz0E"
  }
 ]
