@@ -773,5 +773,129 @@
   "caption": "<b>Linger: локальный AI-агент на вашем ПК</b>\n\nLinger — это open-source персональный агент с мозгом уровня Claude, который работает прямо на вашем ПК и не требует облачных подписок.\n\n<b>Что умеет:</b>\n• Запуск 125B моделей на 12 ГБ видеокарте\n• Локальная память и автономная работа с приложениями\n• Команда агентов для рутинных задач\n\n👤 <b>Кому пригодится:</b> Всем, кто хочет запускать мощный локальный ИИ без облачных сервисов\n\n⭐ 2.8K · TypeScript\n🔗 <a href=\"https://github.com/simplexai-labs/linger\">Открыть на GitHub</a>\n\n#LocalLLM #AI #OpenSource",
   "admin_msg_id": 40,
   "photo_file_id": "AgACAgIAAxkDAAMoawABqDw2hMpBRKMyYAABl2EIax2O9wACLCVrG2iRAUirFWTGzXOHkAEAAwIAA3cAAz0E"
+ },
+ {
+  "publish_from": "2026-11-22",
+  "id": "c8dce4db",
+  "full_name": "iamajmeena/neonclipping",
+  "url": "https://github.com/iamajmeena/neonclipping",
+  "created_at": "2026-11-21T21:09:27.570739+00:00",
+  "status": "pending",
+  "stars_short": "1.7K",
+  "language": "Python",
+  "license": "MIT",
+  "title": "NeonClipping: локальный генератор коротких видео",
+  "intro": "Открытый инструмент для быстрого создания вертикальных клипов из длинных видео. Работает локально через аудиоанализ и локальные LLM.",
+  "features": [
+   "Создание клипов 9:16 за пару минут локально",
+   "Поддержка YouTube, Twitch, Kick и локальных MP4",
+   "Автоматические субтитры и 11 игровых макетов"
+  ],
+  "who": "Стримерам, контент-мейкерам и авторам шортсов",
+  "hashtags": [
+   "AI",
+   "VideoEditing",
+   "OpenSource"
+  ],
+  "category": "Генерация видео",
+  "card_text": "Превращайте длинные стримы и видео с YouTube в вертикальные ролики с субтитрами прямо на ПК за пару минут. Без подписок и интернета.",
+  "install": "git clone https://github.com/iamajmeena/neonclipping.git",
+  "red_flags": "накрутка звёзд?",
+  "caption": "<b>NeonClipping: локальный генератор коротких видео</b>\n\nОткрытый инструмент для быстрого создания вертикальных клипов из длинных видео. Работает локально через аудиоанализ и локальные LLM.\n\n<b>Что умеет:</b>\n• Создание клипов 9:16 за пару минут локально\n• Поддержка YouTube, Twitch, Kick и локальных MP4\n• Автоматические субтитры и 11 игровых макетов\n\n👤 <b>Кому пригодится:</b> Стримерам, контент-мейкерам и авторам шортсов\n\n⭐ 1.7K · Python · MIT\n🔗 <a href=\"https://github.com/iamajmeena/neonclipping\">Открыть на GitHub</a>\n\n#AI #VideoEditing #OpenSource",
+  "admin_msg_id": 42,
+  "photo_file_id": "AgACAgIAAxkDAAMqawIIixvrtISMkTkTQIoJ7OMPLYwAAr4faxsxQRFIWWmDegEZGhoBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-22",
+  "id": "4baee768",
+  "full_name": "rehan-remade/universal-modder",
+  "url": "https://github.com/rehan-remade/universal-modder",
+  "created_at": "2026-11-21T21:09:45.702505+00:00",
+  "status": "pending",
+  "stars_short": "9.8K",
+  "language": "Python",
+  "license": "MIT",
+  "title": "Universal Modder: ИИ-агенты для моддинга игр",
+  "intro": "Набор навыков и инструментов для ИИ-агентов (Claude Code, Cursor, Copilot и др.), позволяющий находить, изучать и моддить ПК-игры.",
+  "features": [
+   "Поиск движка и анализ реального кода игры",
+   "Генерация арта, 3D и звука через fal и другие сервисы",
+   "Тестирование мода в запущенной игре и запись видео"
+  ],
+  "who": "Разработчикам модов и тем, кто экспериментирует с ИИ-агентами",
+  "hashtags": [
+   "modding",
+   "claudecode",
+   "ai"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Инструменты и скиллы для ИИ-агентов, чтобы исследовать, собирать код, генерировать графику через fal и моддить ПК-игры.",
+  "install": "git clone https://github.com/rehan-remade/universal-modder",
+  "red_flags": "",
+  "caption": "<b>Universal Modder: ИИ-агенты для моддинга игр</b>\n\nНабор навыков и инструментов для ИИ-агентов (Claude Code, Cursor, Copilot и др.), позволяющий находить, изучать и моддить ПК-игры.\n\n<b>Что умеет:</b>\n• Поиск движка и анализ реального кода игры\n• Генерация арта, 3D и звука через fal и другие сервисы\n• Тестирование мода в запущенной игре и запись видео\n\n👤 <b>Кому пригодится:</b> Разработчикам модов и тем, кто экспериментирует с ИИ-агентами\n\n⭐ 9.8K · Python · MIT\n🔗 <a href=\"https://github.com/rehan-remade/universal-modder\">Открыть на GitHub</a>\n\n#modding #claudecode #ai",
+  "admin_msg_id": 43,
+  "photo_file_id": "AgACAgIAAxkDAAMrawIInLIaCZ7fMtND19Br-z3DWIcAAr8faxsxQRFIZOITCUczXacBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-22",
+  "id": "2b727199",
+  "full_name": "BaaRai/ARTEX",
+  "url": "https://github.com/BaaRai/ARTEX",
+  "created_at": "2026-11-21T21:10:03.172084+00:00",
+  "status": "pending",
+  "stars_short": "15K",
+  "language": "Go",
+  "license": "AGPL-3.0",
+  "title": "ARTEX: автономный ИИ для пентеста",
+  "intro": "Самохоженая платформа для автономного тестирования на проникновение на базе LLM. Планнер ставит задачи, воркеры запускают реальные инструменты.",
+  "features": [
+   "Двухграфовая архитектура: граф активов и прогресса",
+   "Доказательства уязвимостей через перехват трафика",
+   "Контроль автономности: аппрувы и лимиты токенов"
+  ],
+  "who": "Специалистам по кибербезопасности и Red Team",
+  "hashtags": [
+   "AI",
+   "pentest",
+   "security"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Self-hosted мультиагентная платформа для пентестинга с графами активов и фиксацией реального HTTP-трафика.",
+  "install": "git clone https://github.com/BaaRai/ARTEX.git",
+  "red_flags": "",
+  "caption": "<b>ARTEX: автономный ИИ для пентеста</b>\n\nСамохоженая платформа для автономного тестирования на проникновение на базе LLM. Планнер ставит задачи, воркеры запускают реальные инструменты.\n\n<b>Что умеет:</b>\n• Двухграфовая архитектура: граф активов и прогресса\n• Доказательства уязвимостей через перехват трафика\n• Контроль автономности: аппрувы и лимиты токенов\n\n👤 <b>Кому пригодится:</b> Специалистам по кибербезопасности и Red Team\n\n⭐ 15K · Go · AGPL-3.0\n🔗 <a href=\"https://github.com/BaaRai/ARTEX\">Открыть на GitHub</a>\n\n#AI #pentest #security",
+  "admin_msg_id": 44,
+  "photo_file_id": "AgACAgIAAxkDAAMsawIIrsxUTPojjkSBnHjDdXLB1koAAsAfaxsxQRFIqDl3QCtmVfgBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-22",
+  "id": "ef2a7bd4",
+  "full_name": "storytold/vectorcraft",
+  "url": "https://github.com/storytold/vectorcraft",
+  "created_at": "2026-11-21T21:10:20.379748+00:00",
+  "status": "pending",
+  "stars_short": "12K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "VectorCraft: векторный редактор на Rust",
+  "intro": "VectorCraft — быстрый векторный редактор на чистом Rust для работы с иллюстрациями. Работает на ПК и в браузере.",
+  "features": [
+   "Нативная работа на macOS, Windows, Linux, FreeBSD и в Web",
+   "Поддержка MCP-сервера для агентов",
+   "Перо, кривые Безье, 3D Revolve и сетки перспективы"
+  ],
+  "who": "Дизайнерам, разработчикам и авторам AI-агентов",
+  "hashtags": [
+   "vectorcraft",
+   "rust",
+   "svg"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Современное векторное приложение с поддержкой WebAssembly, MCP-сервером для AI-агентов и открытым исходным кодом.",
+  "install": "git clone https://github.com/storytold/vectorcraft.git",
+  "red_flags": "",
+  "caption": "<b>VectorCraft: векторный редактор на Rust</b>\n\nVectorCraft — быстрый векторный редактор на чистом Rust для работы с иллюстрациями. Работает на ПК и в браузере.\n\n<b>Что умеет:</b>\n• Нативная работа на macOS, Windows, Linux, FreeBSD и в Web\n• Поддержка MCP-сервера для агентов\n• Перо, кривые Безье, 3D Revolve и сетки перспективы\n\n👤 <b>Кому пригодится:</b> Дизайнерам, разработчикам и авторам AI-агентов\n\n⭐ 12K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/vectorcraft\">Открыть на GitHub</a>\n\n#vectorcraft #rust #svg",
+  "admin_msg_id": 45,
+  "photo_file_id": "AgACAgIAAxkDAAMtawIIv8wudIfj7-rq5rnOPXWqQGEAAsEfaxsxQRFIQVIGrcvxmJUBAAMCAAN3AAM9BA"
  }
 ]
