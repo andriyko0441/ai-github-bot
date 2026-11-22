@@ -749,7 +749,7 @@
   "full_name": "simplexai-labs/linger",
   "url": "https://github.com/simplexai-labs/linger",
   "created_at": "2026-11-20T20:06:17.226244+00:00",
-  "status": "pending",
+  "status": "expired",
   "stars_short": "2.8K",
   "language": "TypeScript",
   "license": "",
@@ -897,5 +897,129 @@
   "caption": "<b>VectorCraft: векторный редактор на Rust</b>\n\nVectorCraft — быстрый векторный редактор на чистом Rust для работы с иллюстрациями. Работает на ПК и в браузере.\n\n<b>Что умеет:</b>\n• Нативная работа на macOS, Windows, Linux, FreeBSD и в Web\n• Поддержка MCP-сервера для агентов\n• Перо, кривые Безье, 3D Revolve и сетки перспективы\n\n👤 <b>Кому пригодится:</b> Дизайнерам, разработчикам и авторам AI-агентов\n\n⭐ 12K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/vectorcraft\">Открыть на GitHub</a>\n\n#vectorcraft #rust #svg",
   "admin_msg_id": 45,
   "photo_file_id": "AgACAgIAAxkDAAMtawIIv8wudIfj7-rq5rnOPXWqQGEAAsEfaxsxQRFIQVIGrcvxmJUBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-23",
+  "id": "fa867c79",
+  "full_name": "w01fb0ss/PiBot",
+  "url": "https://github.com/w01fb0ss/PiBot",
+  "created_at": "2026-11-22T22:48:01.417995+00:00",
+  "status": "pending",
+  "stars_short": "367",
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "title": "PiBot: Локальные AI-агенты для ПК",
+  "intro": "PiBot — это локальный ИИ-агент и команда ботов для вашего ПК. Они планируют задачи, запускают команды, правят файлы и работают в веб-браузере.",
+  "features": [
+   "Командные чаты с координатором агентов",
+   "Песочница для безопасного выполнения команд",
+   "Поддержка Ollama, API ключей и OpenRouter"
+  ],
+  "who": "Разработчикам и продвинутым пользователям для автоматизации задач",
+  "hashtags": [
+   "aiagents",
+   "localfirst",
+   "typescript"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Open-source десктопное приложение с командой локальных ИИ-агентов для выполнения задач на вашем компьютере с контролем каждого шага.",
+  "install": "git clone https://github.com/w01fb0ss/PiBot.git",
+  "red_flags": "",
+  "caption": "<b>PiBot: Локальные AI-агенты для ПК</b>\n\nPiBot — это локальный ИИ-агент и команда ботов для вашего ПК. Они планируют задачи, запускают команды, правят файлы и работают в веб-браузере.\n\n<b>Что умеет:</b>\n• Командные чаты с координатором агентов\n• Песочница для безопасного выполнения команд\n• Поддержка Ollama, API ключей и OpenRouter\n\n👤 <b>Кому пригодится:</b> Разработчикам и продвинутым пользователям для автоматизации задач\n\n⭐ 367 · TypeScript · Apache-2.0\n🔗 <a href=\"https://github.com/w01fb0ss/PiBot\">Открыть на GitHub</a>\n\n#aiagents #localfirst #typescript",
+  "admin_msg_id": 47,
+  "photo_file_id": "AgACAgIAAxkDAAMvawNxJI1Nkbh0f_viLlIZVGBV6UgAAoomaxsxQRlI_fpbGduUzLUBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-23",
+  "id": "94dd6f1a",
+  "full_name": "JuneYaooo/rea-video",
+  "url": "https://github.com/JuneYaooo/rea-video",
+  "created_at": "2026-11-22T22:48:19.212104+00:00",
+  "status": "pending",
+  "stars_short": "12.2K",
+  "language": "Python",
+  "license": "Apache-2.0",
+  "title": "rea-video: реверс-инжиниринг видео",
+  "intro": "Инструмент для Claude Code и Codex, который покадрово анализирует любое видео и выдает план его ремейка в формате VIDEO.md.",
+  "features": [
+   "Определяет съемка, ИИ или код",
+   "Создает промпты для каждого кадра",
+   "Экспортирует субтитры и тайминги"
+  ],
+  "who": "видеомейкерам, создателям контента и разработчикам",
+  "hashtags": [
+   "aivideo",
+   "claudecode",
+   "reverseengineering"
+  ],
+  "category": "Генерация видео",
+  "card_text": "Инструмент для AI-агентов, который покадрово разбирает любое видео и объясняет, как его повторить.",
+  "install": "codex plugin marketplace add JuneYaooo/rea-video",
+  "red_flags": "Автор предупреждает о скаме: проект не выпускает и не будет выпускать криптовалютных токенов.",
+  "caption": "<b>rea-video: реверс-инжиниринг видео</b>\n\nИнструмент для Claude Code и Codex, который покадрово анализирует любое видео и выдает план его ремейка в формате VIDEO.md.\n\n<b>Что умеет:</b>\n• Определяет съемка, ИИ или код\n• Создает промпты для каждого кадра\n• Экспортирует субтитры и тайминги\n\n👤 <b>Кому пригодится:</b> видеомейкерам, создателям контента и разработчикам\n\n⭐ 12.2K · Python · Apache-2.0\n🔗 <a href=\"https://github.com/JuneYaooo/rea-video\">Открыть на GitHub</a>\n\n#aivideo #claudecode #reverseengineering",
+  "admin_msg_id": 48,
+  "photo_file_id": "AgACAgIAAxkDAAMwawNxNkW5s_0GSXSc1KPuYKmfc3MAAosmaxsxQRlI8NS8Yt4FGDMBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-23",
+  "id": "03bd0889",
+  "full_name": "storytold/craft-anything",
+  "url": "https://github.com/storytold/craft-anything",
+  "created_at": "2026-11-22T22:48:38.785507+00:00",
+  "status": "pending",
+  "stars_short": "41.2K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "Craft Anything: Изучай и воссоздавай софт с AI",
+  "intro": "Open-source движок на чистого Rust, который изучает чужой софт и помогает AI-агенту воссоздать его с нуля.",
+  "features": [
+   "Инспекция сайтов, приложений, игр",
+   "Генерация нового проекта с помощью AI",
+   "Сравнение результата с оригиналом"
+  ],
+  "who": "Разработчикам, инженерам обратной разработки и создателям контента.",
+  "hashtags": [
+   "AI",
+   "Rust",
+   "OpenSource"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Инструмент на Rust: исследует сайты, приложения или игры, а AI-агент строит их аналог.",
+  "install": "git clone https://github.com/storytold/craft-anything.git",
+  "red_flags": "накрутка звёзд?",
+  "caption": "<b>Craft Anything: Изучай и воссоздавай софт с AI</b>\n\nOpen-source движок на чистого Rust, который изучает чужой софт и помогает AI-агенту воссоздать его с нуля.\n\n<b>Что умеет:</b>\n• Инспекция сайтов, приложений, игр\n• Генерация нового проекта с помощью AI\n• Сравнение результата с оригиналом\n\n👤 <b>Кому пригодится:</b> Разработчикам, инженерам обратной разработки и создателям контента.\n\n⭐ 41.2K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/storytold/craft-anything\">Открыть на GitHub</a>\n\n#AI #Rust #OpenSource",
+  "admin_msg_id": 49,
+  "photo_file_id": "AgACAgIAAxkDAAMxawNxSczC97tj0lOoOdAWgFTRIWUAAowmaxsxQRlItL4ihAafWPoBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-23",
+  "id": "60119951",
+  "full_name": "deepseek-ai/dsh-superagent-prototype",
+  "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+  "created_at": "2026-11-22T22:48:56.472584+00:00",
+  "status": "pending",
+  "stars_short": "24.2K",
+  "language": "TypeScript",
+  "license": "MIT",
+  "title": "Прототип проактивного AI-агента от DeepSeek",
+  "intro": "DeepSeek выложили research-прототип проактивного кодинг-агента для работы с одним репозиторием через DeepSeek Harness. Он слушает GitHub и Feishu, выполняет задачи и создает PR.",
+  "features": [
+   "Слушает запросы в GitHub и Feishu",
+   "Работает в изолированной сессии и директории",
+   "Показывает задачи, требующие человека, через веб-панель"
+  ],
+  "who": "Разработчикам, изучающим автономные системы и AI-агентов",
+  "hashtags": [
+   "DeepSeek",
+   "AIagents",
+   "TypeScript"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Research-прототип проактивного агента для работы с кодом в репозитории с минимальным участием человека.",
+  "install": "git clone https://github.com/deepseek-ai/dsh-superagent-prototype.git",
+  "red_flags": "Research-прототип, не готовый для продакшена софт, может содержать баги накрутка звёзд?",
+  "caption": "<b>Прототип проактивного AI-агента от DeepSeek</b>\n\nDeepSeek выложили research-прототип проактивного кодинг-агента для работы с одним репозиторием через DeepSeek Harness. Он слушает GitHub и Feishu, выполняет задачи и создает PR.\n\n<b>Что умеет:</b>\n• Слушает запросы в GitHub и Feishu\n• Работает в изолированной сессии и директории\n• Показывает задачи, требующие человека, через веб-панель\n\n👤 <b>Кому пригодится:</b> Разработчикам, изучающим автономные системы и AI-агентов\n\n⭐ 24.2K · TypeScript · MIT\n🔗 <a href=\"https://github.com/deepseek-ai/dsh-superagent-prototype\">Открыть на GitHub</a>\n\n#DeepSeek #AIagents #TypeScript",
+  "admin_msg_id": 50,
+  "photo_file_id": "AgACAgIAAxkDAAMyawNxW9y9hLiUor3zm7JStqzrPNQAAo0maxsxQRlIbMr_A9pa8AQBAAMCAAN3AAM9BA"
  }
 ]
