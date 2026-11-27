@@ -1269,5 +1269,129 @@
   "caption": "<b>agy-fast: ускоритель для Google Antigravity</b>\n\nУскоритель для Google Antigravity (CLI, Desktop и IDE), оптимизирующий работу агентов и снижающий расход токенов без изменения нативного интерфейса.\n\n<b>Что умеет:</b>\n• Сокращает LLM-ходы и квоту токенов на ~31-34%\n• Пакетная обработка локальных вызовов и поисков\n• Нулевые зависимости и работа без внешних серверов\n\n👤 <b>Кому пригодится:</b> Разработчикам, использующим экосистему Google Antigravity\n\n⭐ 1.5K · TypeScript · MIT\n🔗 <a href=\"https://github.com/INK-Q/agy-fast\">Открыть на GitHub</a>\n\n#aiagents #antigravity #mcp",
   "admin_msg_id": 60,
   "photo_file_id": "AgACAgIAAxkDAAM8awdhp0NX5uiKGATvObPvi1aJU48AAkIcaxs3JEBIrLGDAtaQS2wBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-28",
+  "id": "c853c3ff",
+  "full_name": "nexu-io/opengame",
+  "url": "https://github.com/nexu-io/opengame",
+  "created_at": "2026-11-27T20:20:01.909389+00:00",
+  "status": "pending",
+  "stars_short": "2.1K",
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "title": "OpenGame — Игровая студия для AI-агентов",
+  "intro": "Первый открытый игровой супер-агент на TypeScript. Позволяет генерировать, ремикшировать и публиковать 3D-игры с помощью 22+ локальных агентов.",
+  "features": [
+   "Поддержка 22+ локальных AI-агентов и MCP",
+   "25 встроенных шаблонов игр и Three.js",
+   "Публикация в TikTok, WeChat, Telegram и"
+  ],
+  "who": "Инди-разработчикам и создателям контента, использующим AI-агентов для кодинга.",
+  "hashtags": [
+   "aiagents",
+   "gamedev",
+   "claudecode"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Превратите Claude Code, DeepSeek или Codex в полноценную студию для создания 3D и мини-игр из одного промпта.",
+  "install": "git clone https://github.com/nexu-io/opengame.git",
+  "red_flags": "накрутка звёзд?",
+  "caption": "<b>OpenGame — Игровая студия для AI-агентов</b>\n\nПервый открытый игровой супер-агент на TypeScript. Позволяет генерировать, ремикшировать и публиковать 3D-игры с помощью 22+ локальных агентов.\n\n<b>Что умеет:</b>\n• Поддержка 22+ локальных AI-агентов и MCP\n• 25 встроенных шаблонов игр и Three.js\n• Публикация в TikTok, WeChat, Telegram и\n\n👤 <b>Кому пригодится:</b> Инди-разработчикам и создателям контента, использующим AI-агентов для кодинга.\n\n⭐ 2.1K · TypeScript · Apache-2.0\n🔗 <a href=\"https://github.com/nexu-io/opengame\">Открыть на GitHub</a>\n\n#aiagents #gamedev #claudecode",
+  "admin_msg_id": 62,
+  "photo_file_id": "AgACAgIAAxkDAAM-awnl9RQ-aIbWxOt0zZRX2YdrbjcAAtwqaxsRDlBIio5XwbNc7AEBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-28",
+  "id": "cae3cdd1",
+  "full_name": "qianyiai/KuroCat",
+  "url": "https://github.com/qianyiai/KuroCat",
+  "created_at": "2026-11-27T20:20:20.435664+00:00",
+  "status": "pending",
+  "stars_short": "1.8K",
+  "language": "TypeScript",
+  "license": "MIT",
+  "title": "KuroCat — интерактивный 3D/2D десктопный кот",
+  "intro": "KuroCat — это кроссплатформенный интерактивный питомец для рабочего стола (альтернатива Bongo Cat) с поддержкой ИИ и MCP.",
+  "features": [
+   "6 видов котиков и персонажей с настройкой внешности",
+   "Визуализация ввода с клавиатуры и мыши в реальном времени",
+   "Интеграция с AI-инструментами и OBS Studio"
+  ],
+  "who": "Разработчикам, стримерам и любителям кастомизации рабочего стола.",
+  "hashtags": [
+   "KuroCat",
+   "Rust",
+   "DesktopPet"
+  ],
+  "category": "Десктопные утилиты",
+  "card_text": "Бесплатный open-source питомец на Tauri и Rust, визуализирующий клавиатуру и работающий как AI-компаньон.",
+  "install": "brew ins",
+  "red_flags": "Автор предупреждает о появлении поддельных сайтов (например, распространяющих зараженные файлы. Загружайте строго с официального сайта или GitHub.",
+  "caption": "<b>KuroCat — интерактивный 3D/2D десктопный кот</b>\n\nKuroCat — это кроссплатформенный интерактивный питомец для рабочего стола (альтернатива Bongo Cat) с поддержкой ИИ и MCP.\n\n<b>Что умеет:</b>\n• 6 видов котиков и персонажей с настройкой внешности\n• Визуализация ввода с клавиатуры и мыши в реальном времени\n• Интеграция с AI-инструментами и OBS Studio\n\n👤 <b>Кому пригодится:</b> Разработчикам, стримерам и любителям кастомизации рабочего стола.\n\n⭐ 1.8K · TypeScript · MIT\n🔗 <a href=\"https://github.com/qianyiai/KuroCat\">Открыть на GitHub</a>\n\n#KuroCat #Rust #DesktopPet",
+  "admin_msg_id": 63,
+  "photo_file_id": "AgACAgIAAxkDAAM_awnmByezSNcAAfPkDxqn0yL67z6LAALdKmsbEQ5QSOpzD2EBZyoXAQADAgADdwADPQQ"
+ },
+ {
+  "publish_from": "2026-11-28",
+  "id": "167b566c",
+  "full_name": "erkamyaman/rust-anything",
+  "url": "https://github.com/erkamyaman/rust-anything",
+  "created_at": "2026-11-27T20:20:37.760025+00:00",
+  "status": "pending",
+  "stars_short": "10.7K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "Rust Anything: перенос кода на Rust",
+  "intro": "Постепенно переписывайте приложение на Rust по частям. Инструмент проверяет совпадение поведения с оригиналом на каждом шаге.",
+  "features": [
+   "Пошаговый перенос кода на Rust",
+   "Проверка поведения оригинал против порта",
+   "Интеграция с Claude Code и агентами"
+  ],
+  "who": "Разработчикам, желающим переписать кодовую базу на Rust",
+  "hashtags": [
+   "rust",
+   "refactoring",
+   "cli"
+  ],
+  "category": "Миграция кода",
+  "card_text": "Инструмент для постепенного переноса вашего приложения на Rust с проверкой поведения оригинала на каждом шаге.",
+  "install": "npm install -g rust-anything",
+  "red_flags": "накрутка звёзд?",
+  "caption": "<b>Rust Anything: перенос кода на Rust</b>\n\nПостепенно переписывайте приложение на Rust по частям. Инструмент проверяет совпадение поведения с оригиналом на каждом шаге.\n\n<b>Что умеет:</b>\n• Пошаговый перенос кода на Rust\n• Проверка поведения оригинал против порта\n• Интеграция с Claude Code и агентами\n\n👤 <b>Кому пригодится:</b> Разработчикам, желающим переписать кодовую базу на Rust\n\n⭐ 10.7K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/erkamyaman/rust-anything\">Открыть на GitHub</a>\n\n#rust #refactoring #cli",
+  "admin_msg_id": 64,
+  "photo_file_id": "AgACAgIAAxkDAANAawnmGXnrAZ5Ej0FYyJqQ3RtynV4AAt4qaxsRDlBIClAt2qlNjA4BAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-28",
+  "id": "70faca87",
+  "full_name": "libracoder/kiri",
+  "url": "https://github.com/libracoder/kiri",
+  "created_at": "2026-11-27T20:20:55.894660+00:00",
+  "status": "pending",
+  "stars_short": "14K",
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "title": "Kiri — быстрый рантайм контейнеров",
+  "intro": "Kiri — это написанный на Rust легкий и быстрый рантайм контейнеров для macOS, Windows и Linux, созданный как замена тяжелому Docker Desktop.",
+  "features": [
+   "Запуск контейнеров в ~80 раз быстрее Docker Desktop",
+   "Совместимость с CLI Docker, Compose и buildx",
+   "Локальные домены и встроенный k3s кластер"
+  ],
+  "who": "Разработчикам, которым надоел медленный Docker Desktop.",
+  "hashtags": [
+   "Docker",
+   "Rust",
+   "Kubernetes"
+  ],
+  "category": "Контейнеры",
+  "card_text": "Легкая замена Docker Desktop на Rust. Быстрый запуск, интеграция с CLI и Compose, поддержка macOS, Windows и Linux.",
+  "install": "brew install --cask libracoder/kiri/kiri",
+  "red_flags": "",
+  "caption": "<b>Kiri — быстрый рантайм контейнеров</b>\n\nKiri — это написанный на Rust легкий и быстрый рантайм контейнеров для macOS, Windows и Linux, созданный как замена тяжелому Docker Desktop.\n\n<b>Что умеет:</b>\n• Запуск контейнеров в ~80 раз быстрее Docker Desktop\n• Совместимость с CLI Docker, Compose и buildx\n• Локальные домены и встроенный k3s кластер\n\n👤 <b>Кому пригодится:</b> Разработчикам, которым надоел медленный Docker Desktop.\n\n⭐ 14K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/libracoder/kiri\">Открыть на GitHub</a>\n\n#Docker #Rust #Kubernetes",
+  "admin_msg_id": 65,
+  "photo_file_id": "AgACAgIAAxkDAANBawnmKyD8CeLiSLSmoBNGTwjOMrgAAt8qaxsRDlBIyLMBZZOzUyYBAAMCAAN5AAM9BA"
  }
 ]
