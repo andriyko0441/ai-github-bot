@@ -1393,5 +1393,129 @@
   "caption": "<b>Kiri — быстрый рантайм контейнеров</b>\n\nKiri — это написанный на Rust легкий и быстрый рантайм контейнеров для macOS, Windows и Linux, созданный как замена тяжелому Docker Desktop.\n\n<b>Что умеет:</b>\n• Запуск контейнеров в ~80 раз быстрее Docker Desktop\n• Совместимость с CLI Docker, Compose и buildx\n• Локальные домены и встроенный k3s кластер\n\n👤 <b>Кому пригодится:</b> Разработчикам, которым надоел медленный Docker Desktop.\n\n⭐ 14K · Rust · Apache-2.0\n🔗 <a href=\"https://github.com/libracoder/kiri\">Открыть на GitHub</a>\n\n#Docker #Rust #Kubernetes",
   "admin_msg_id": 65,
   "photo_file_id": "AgACAgIAAxkDAANBawnmKyD8CeLiSLSmoBNGTwjOMrgAAt8qaxsRDlBIyLMBZZOzUyYBAAMCAAN5AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-29",
+  "id": "c4a067a7",
+  "full_name": "JosssphZhou/poki",
+  "url": "https://github.com/JosssphZhou/poki",
+  "created_at": "2026-11-28T20:34:57.563360+00:00",
+  "status": "pending",
+  "stars_short": "2.2K",
+  "language": "Swift",
+  "license": "AGPL-3.0",
+  "title": "Poki — открытый AI-агент для iPhone",
+  "intro": "Poki — это open-source агент, который запускается прямо на вашем iPhone, читает экран и управляет реальными приложениями.",
+  "features": [
+   "Автоматизирует рутину и поиск в приложениях",
+   "Поддерживает запуск навыков голосом или по тапу",
+   "Работает автономно без постоянного подключения к ПК"
+  ],
+  "who": "Тем, кто хочет автоматизировать рутинные задачи на iPhone с помощью AI.",
+  "hashtags": [
+   "aiagents",
+   "iphone",
+   "automation"
+  ],
+  "category": "AI-агенты",
+  "card_text": "Open-source агент для iPhone, который читает экран, нажимает на кнопки и выполняет рутину в реальных приложениях с вашим аккаунтом модели.",
+  "install": "Install Poki on my iPhone from https://github.com/JosssphZhou/poki",
+  "red_flags": "Для установки требуется подключить iPhone по USB, включить режим разработчика и настроить маршрутизацию через сторонний VPN (например, LocalDevVPN).",
+  "caption": "<b>Poki — открытый AI-агент для iPhone</b>\n\nPoki — это open-source агент, который запускается прямо на вашем iPhone, читает экран и управляет реальными приложениями.\n\n<b>Что умеет:</b>\n• Автоматизирует рутину и поиск в приложениях\n• Поддерживает запуск навыков голосом или по тапу\n• Работает автономно без постоянного подключения к ПК\n\n👤 <b>Кому пригодится:</b> Тем, кто хочет автоматизировать рутинные задачи на iPhone с помощью AI.\n\n⭐ 2.2K · Swift · AGPL-3.0\n🔗 <a href=\"https://github.com/JosssphZhou/poki\">Открыть на GitHub</a>\n\n#aiagents #iphone #automation",
+  "admin_msg_id": 67,
+  "photo_file_id": "AgACAgIAAxkDAANDaws69a1y15J9YOHIu1hFgazK84wAArAraxsRDlhIDF0N9dQXWoYBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-29",
+  "id": "a31b98d6",
+  "full_name": "AienTech/dossier",
+  "url": "https://github.com/AienTech/dossier",
+  "created_at": "2026-11-28T20:35:30.356517+00:00",
+  "status": "pending",
+  "stars_short": "5.5K",
+  "language": "TypeScript",
+  "license": "AGPL-3.0",
+  "title": "Dossier: свой AI-ассистент для поиска работы",
+  "intro": "Dossier хранит вашу карьерную историю на собственном сервере и помогает подстраивать резюме и сопроводительные письма под каждую вакансию без выдумывания фактов.",
+  "features": [
+   "Генерирует резюме и письма строго по фактам из профиля",
+   "Трекинг всех откликов от черновика до оффера",
+   "Работает с локальными LLM через Ollama или LM Studio"
+  ],
+  "who": "Тем, кто ищет работу и хочет сам контролировать свои данные.",
+  "hashtags": [
+   "AI",
+   "SelfHosted",
+   "JobSearch"
+  ],
+  "category": "Карьера и AI",
+  "card_text": "Self-hosted приложение для создания резюме, сопроводительных писем и трекинга откликов через локальные или облачные LLM.",
+  "install": "ghcr.io/aientech/dossier",
+  "red_flags": "",
+  "caption": "<b>Dossier: свой AI-ассистент для поиска работы</b>\n\nDossier хранит вашу карьерную историю на собственном сервере и помогает подстраивать резюме и сопроводительные письма под каждую вакансию без выдумывания фактов.\n\n<b>Что умеет:</b>\n• Генерирует резюме и письма строго по фактам из профиля\n• Трекинг всех откликов от черновика до оффера\n• Работает с локальными LLM через Ollama или LM Studio\n\n👤 <b>Кому пригодится:</b> Тем, кто ищет работу и хочет сам контролировать свои данные.\n\n⭐ 5.5K · TypeScript · AGPL-3.0\n🔗 <a href=\"https://github.com/AienTech/dossier\">Открыть на GitHub</a>\n\n#AI #SelfHosted #JobSearch",
+  "admin_msg_id": 68,
+  "photo_file_id": "AgACAgIAAxkDAANEaws7FTMYikGc-OIeqyWBc8ByVcAAArEraxsRDlhIXxpeOdUhzTgBAAMCAAN5AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-29",
+  "id": "cd86b5e2",
+  "full_name": "DeadInternetStudios/100x-engineer-skill",
+  "url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
+  "created_at": "2026-11-28T20:35:47.709542+00:00",
+  "status": "pending",
+  "stars_short": "1.7K",
+  "language": "JavaScript",
+  "license": "MIT",
+  "title": "100x: скилл для агентов с формальной верификацией",
+  "intro": "Новый опенсорсный скилл для AI-агентов помогает закрыть последние 10% разработки с помощью формальной верификации блоков кода.",
+  "features": [
+   "Разбивает задачу на мелкие проверяемые блоки",
+   "Проверяет состояние, переходы и инварианты",
+   "Второй AI-моделью проводит ревью результата"
+  ],
+  "who": "Разработчикам, использующим Claude Code, Cursor или Codex",
+  "hashtags": [
+   "aiagents",
+   "cursor",
+   "claudecode"
+  ],
+  "category": "AI-агенты",
+  "card_text": "От бывшего инженера Cursor: превращает промпты в верифицированный продакшн-код с помощью Claude Code, Cursor или Codex.",
+  "install": "git clone https://github.com/DeadInternetStudios/100x-engineer-skill.git",
+  "red_flags": "",
+  "caption": "<b>100x: скилл для агентов с формальной верификацией</b>\n\nНовый опенсорсный скилл для AI-агентов помогает закрыть последние 10% разработки с помощью формальной верификации блоков кода.\n\n<b>Что умеет:</b>\n• Разбивает задачу на мелкие проверяемые блоки\n• Проверяет состояние, переходы и инварианты\n• Второй AI-моделью проводит ревью результата\n\n👤 <b>Кому пригодится:</b> Разработчикам, использующим Claude Code, Cursor или Codex\n\n⭐ 1.7K · JavaScript · MIT\n🔗 <a href=\"https://github.com/DeadInternetStudios/100x-engineer-skill\">Открыть на GitHub</a>\n\n#aiagents #cursor #claudecode",
+  "admin_msg_id": 69,
+  "photo_file_id": "AgACAgIAAxkDAANFaws7J_S8B_Yie-npUAZ7gREfwIcAArIraxsRDlhIVGIX-olNFfEBAAMCAAN3AAM9BA"
+ },
+ {
+  "publish_from": "2026-11-29",
+  "id": "1eec2a25",
+  "full_name": "busygktrider92-lab/job-search-bot",
+  "url": "https://github.com/busygktrider92-lab/job-search-bot",
+  "created_at": "2026-11-28T20:36:05.791085+00:00",
+  "status": "pending",
+  "stars_short": "210",
+  "language": "HTML",
+  "license": "MIT",
+  "title": "Telegram-бот для поиска и фильтрации вакансий",
+  "intro": "Ищете работу? Этот комьюнити-бот следит за публичными фидами, фильтщает вакансии по вашим ключевым словам и мгновенно присылает алерты в Telegram.",
+  "features": [
+   "Умные профили без сложных regex — только ключевые слова",
+   "Генерация адаптированного резюме (PDF) и писем по кнопке",
+   "Трекинг откликов, тихие часы и еженедельный дайджест"
+  ],
+  "who": "Всем, кто активно ищет работу и хочет автоматизировать отбор вакансий.",
+  "hashtags": [
+   "TelegramBot",
+   "JobSearch",
+   "OpenSource"
+  ],
+  "category": "Карьера и поиск",
+  "card_text": "Community-driven бот для Telegram: умные фильтры, мгновенные алерты, адаптация резюме и сопроводительных писем под вакансии.",
+  "install": "git clone https://github.com/busygktrider92-lab/job-search-bot.git",
+  "red_flags": "",
+  "caption": "<b>Telegram-бот для поиска и фильтрации вакансий</b>\n\nИщете работу? Этот комьюнити-бот следит за публичными фидами, фильтщает вакансии по вашим ключевым словам и мгновенно присылает алерты в Telegram.\n\n<b>Что умеет:</b>\n• Умные профили без сложных regex — только ключевые слова\n• Генерация адаптированного резюме (PDF) и писем по кнопке\n• Трекинг откликов, тихие часы и еженедельный дайджест\n\n👤 <b>Кому пригодится:</b> Всем, кто активно ищет работу и хочет автоматизировать отбор вакансий.\n\n⭐ 210 · HTML · MIT\n🔗 <a href=\"https://github.com/busygktrider92-lab/job-search-bot\">Открыть на GitHub</a>\n\n#TelegramBot #JobSearch #OpenSource",
+  "admin_msg_id": 70,
+  "photo_file_id": "AgACAgIAAxkDAANGaws7OSEMo4w9kF5Mwx-uqk1iEw0AArMraxsRDlhIJ9yBVN4RmooBAAMCAAN3AAM9BA"
  }
 ]
